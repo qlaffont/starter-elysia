@@ -28,6 +28,7 @@
     "elysia-helmet": "^1.0.2",
     "elysia-rate-limit": "^3.1.1",
     "graceful-server-elysia": "^1.0.4",
+    "graphql-rate-limit-directive": "^2.0.5",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "pino": "^8.19.0",
