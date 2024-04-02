@@ -21,7 +21,7 @@
     "@t3-oss/env-core": "^0.9.2",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.6",
-    "elysia": "latest",
+    "elysia": "^1.0.10",
     "elysia-helmet": "^1.0.2",
     "elysia-rate-limit": "^3.0.0",
     "graceful-server-elysia": "^1.0.2",

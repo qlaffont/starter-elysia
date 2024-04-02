@@ -81,7 +81,7 @@ export const runServer = async () => {
     );
 
   await loadREST(server);
-  await loadGraphQL(server);
+  // await loadGraphQL(server);
 
   return server;
 };

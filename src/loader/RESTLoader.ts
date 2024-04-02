@@ -1,5 +1,5 @@
 import swagger from '@elysiajs/swagger';
-// import { rateLimit } from 'elysia-rate-limit';
+import { rateLimit } from 'elysia-rate-limit';
 import { startCase } from 'lodash';
 
 import { pingRoutes } from '../components/ping/pingRoutes';
@@ -7,34 +7,32 @@ import { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
 
 export const loadREST = async (app: ElysiaServer) => {
-  let server = app;
-  //TODO Rate limit not working
-  // .use(
-  //   rateLimit({
-  //     duration: 60 * 1000,
-  //     max: 5,
-  //     responseMessage: 'Too many requests, please try again later',
-  //     countFailedRequest: true,
-  //     skip: (request) => {
-  //       const urls = [
-  //         '/swagger',
-  //         '/graphql',
-  //         '/documentation/json',
-  //         '/live',
-  //         '/ready',
-  //       ];
+  let server = app.use(
+    rateLimit({
+      duration: 60 * 1000,
+      max: 5,
+      responseMessage: 'Too many requests, please try again later',
+      countFailedRequest: true,
+      skip: (request) => {
+        const urls = [
+          '/swagger',
+          '/graphql',
+          '/documentation/json',
+          '/live',
+          '/ready',
+        ];
 
-  //       for (const url of urls) {
-  //         const urlClean = request.url.split('?')[0];
-  //         if (urlClean.endsWith(url)) {
-  //           return true;
-  //         }
-  //       }
+        for (const url of urls) {
+          const urlClean = request.url.split('?')[0];
+          if (urlClean.endsWith(url)) {
+            return true;
+          }
+        }
 
-  //       return true;
-  //     },
-  //   }),
-  // );
+        return true;
+      },
+    }),
+  );
 
   const routes = [
     {
