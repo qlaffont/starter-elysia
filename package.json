@@ -34,9 +34,9 @@
     "pino": "^8.19.0",
     "reflect-metadata": "^0.2.2",
     "type-graphql": "1.1.1",
-    "unify-elysia": "^1.0.8",
-    "unify-elysia-gql": "^1.0.3",
-    "unify-errors": "^1.2.228",
+    "unify-elysia": "^1.0.9",
+    "unify-elysia-gql": "^1.0.4",
+    "unify-errors": "1.2.229",
     "zod": "^3.22.4"
   },
   "devDependencies": {
