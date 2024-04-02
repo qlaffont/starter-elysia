@@ -10,7 +10,7 @@
     "test:watch": "bun test --watch",
     "lint": "eslint src test",
     "migration:make": "drizzle-kit generate:pg",
-    "migration:up": "drizzle-kit push:pg",
+    "migration:up": "bun drizzle/migrate.ts",
     "migration:studio": "drizzle-kit studio"
   },
   "dependencies": {
