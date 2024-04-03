@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-namespace */
 import { Logger } from 'pino';
 
-import { env as ENV } from './env';
+import { env as ENV } from '../services/env';
 
 declare global {
   namespace globalThis {

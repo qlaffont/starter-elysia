@@ -15,9 +15,6 @@ import { loadREST } from './loader/RESTLoader';
 import { isDevelopmentEnv } from './services/env';
 
 export const runServer = async () => {
-  //TODO fix global.env issue
-  //TODO session
-
   const origin = isDevelopmentEnv() ? true : /(myapp\.qlaffont\.com)$/;
 
   const server = new Elysia()

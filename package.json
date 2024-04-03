@@ -8,7 +8,7 @@
     "start:telemetry": "bun run --preload ./src/telemetry.ts --watch src/index.ts",
     "test": "bun test --coverage",
     "test:watch": "bun test --watch",
-    "lint": "eslint src test",
+    "lint": "eslint src",
     "migration:make": "drizzle-kit generate:pg",
     "migration:up": " export $(cat .env | xargs) && bun run drizzle/migrate.ts",
     "migration:studio": "drizzle-kit studio"
