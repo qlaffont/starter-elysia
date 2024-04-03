@@ -20,10 +20,3 @@ export const Tokens = pgTable(
     idIdx: index('tokens_id_idx').on(tokens.id),
   }),
 );
-
-// export const tokensRelations = relations(tokens, ({ one }) => ({
-//   owner: one(users, {
-//     fields: [tokens.ownerId],
-//     references: [users.id],
-//   }),
-// }));

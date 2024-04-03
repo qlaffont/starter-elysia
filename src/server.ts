@@ -1,8 +1,11 @@
 import 'reflect-metadata';
 
+import { db } from '@db/connection';
+import { Tokens, Users } from '@db/schemas';
 import { cors } from '@elysiajs/cors';
 import { serverTiming } from '@elysiajs/server-timing';
 import Elysia from 'elysia';
+import { elysiaAuthDrizzlePlugin, ElysiaUrlConfig } from 'elysia-auth-drizzle';
 import { helmet } from 'elysia-helmet';
 import { pluginGracefulServer } from 'graceful-server-elysia';
 import { pluginUnifyElysia } from 'unify-elysia';
@@ -12,7 +15,6 @@ import { loadREST } from './loader/RESTLoader';
 import { isDevelopmentEnv } from './services/env';
 
 export const runServer = async () => {
-  //TODO Add ElysiaDrizzleAuthPlugin When Type is validated
   //TODO fix global.env issue
   //TODO session
 
@@ -77,6 +79,43 @@ export const runServer = async () => {
     .use(
       serverTiming({
         enabled: isDevelopmentEnv(),
+      }),
+    )
+    .use(
+      elysiaAuthDrizzlePlugin<typeof Users.$inferSelect>({
+        config: [
+          ...((isDevelopmentEnv()
+            ? [
+                {
+                  url: '/swagger/*',
+                  method: '*',
+                },
+                {
+                  url: '/swagger',
+                  method: '*',
+                },
+              ]
+            : []) as ElysiaUrlConfig[]),
+          {
+            url: '/graphql',
+            method: '*',
+          },
+          {
+            url: '/ready',
+            method: 'GET',
+          },
+          {
+            url: '/live',
+            method: 'GET',
+          },
+        ],
+        jwtSecret: global.env.JWT_ACCESS_SECRET,
+        cookieSecret: global.env.COOKIE_SECRET,
+        drizzle: {
+          db: db,
+          usersSchema: Users,
+          tokensSchema: Tokens,
+        },
       }),
     );
 

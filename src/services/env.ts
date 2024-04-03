@@ -23,6 +23,8 @@ export const env = createEnv({
     JWT_REFRESH_TIME: z.string(),
     JWT_ACCESS_SECRET: z.string(),
     JWT_REFRESH_SECRET: z.string(),
+
+    COOKIE_SECRET: z.string(),
   },
   runtimeEnv: process.env,
 });

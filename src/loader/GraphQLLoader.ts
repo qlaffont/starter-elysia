@@ -15,7 +15,11 @@ export const loadGraphQL = async (server: ElysiaServer) => {
     logger.info(`[GQL] ${resolver.name} Query & Mutations loaded`);
   }
 
-  const { handleQueryAndResolver } = pluginUnifyElysiaGraphQL({});
+  const { handleQueryAndResolver } = pluginUnifyElysiaGraphQL({
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
+    logInstance: global.logger,
+  });
 
   return server.use(
     yoga({

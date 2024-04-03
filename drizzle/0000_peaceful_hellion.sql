@@ -8,8 +8,13 @@ CREATE TABLE IF NOT EXISTS "tokens" (
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"first_name" text,
+	"email" text NOT NULL,
+	"password" text NOT NULL,
+	"reset_password_code" text,
 	"created_at" timestamp DEFAULT now() NOT NULL,
-	"updated_at" timestamp DEFAULT now() NOT NULL
+	"updated_at" timestamp DEFAULT now() NOT NULL,
+	CONSTRAINT "users_email_unique" UNIQUE("email")
 );
 --> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "tokens_id_idx" ON "tokens" ("id");--> statement-breakpoint

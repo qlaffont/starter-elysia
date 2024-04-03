@@ -10,7 +10,7 @@
     "test:watch": "bun test --watch",
     "lint": "eslint src test",
     "migration:make": "drizzle-kit generate:pg",
-    "migration:up": "bun drizzle/migrate.ts",
+    "migration:up": " export $(cat .env | xargs) && bun run drizzle/migrate.ts",
     "migration:studio": "drizzle-kit studio"
   },
   "resolutions": {
@@ -25,6 +25,7 @@
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.6",
     "elysia": "^1.0.11",
+    "elysia-auth-drizzle": "^1.0.3",
     "elysia-helmet": "^1.0.2",
     "elysia-rate-limit": "^3.1.1",
     "graceful-server-elysia": "^1.0.4",
