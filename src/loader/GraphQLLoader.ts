@@ -19,6 +19,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
     logInstance: global.logger,
+    disableDetails: !isDevelopmentEnv(),
   });
 
   return server.use(

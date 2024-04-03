@@ -28,6 +28,7 @@ export const runServer = async () => {
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
         logInstance: global.logger,
+        disableDetails: !isDevelopmentEnv(),
       }),
     )
     .use(
