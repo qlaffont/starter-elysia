@@ -92,6 +92,10 @@ export const runServer = async () => {
                   url: '/swagger',
                   method: '*',
                 },
+                {
+                  url: '/ping/sse',
+                  method: 'GET',
+                },
               ]
             : []) as ElysiaUrlConfig[]),
           {
