@@ -2,7 +2,8 @@ import swagger from '@elysiajs/swagger';
 import { rateLimit } from 'elysia-rate-limit';
 import { startCase } from 'lodash';
 
-import { pingRoutes } from '../components/ping/pingRoutes';
+import { AuthRoutes } from '../components/auth/authRoutes';
+import { PingRoutes } from '../components/ping/pingRoutes';
 import { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
 
@@ -36,7 +37,10 @@ export const loadREST = async (app: ElysiaServer) => {
 
   const routes = [
     {
-      '/ping': pingRoutes,
+      '/ping': PingRoutes,
+    },
+    {
+      '/auth': AuthRoutes,
     },
   ];
 

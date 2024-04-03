@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import 'reflect-metadata';
 
 import { db } from '@db/connection';
@@ -17,7 +18,7 @@ import { isDevelopmentEnv } from './services/env';
 export const runServer = async () => {
   const origin = isDevelopmentEnv() ? true : /(myapp\.qlaffont\.com)$/;
 
-  const server = new Elysia()
+  let server = new Elysia()
     .use(
       pluginGracefulServer({
         serverIsReadyOnStart: true,
@@ -110,6 +111,8 @@ export const runServer = async () => {
             url: '/live',
             method: 'GET',
           },
+          { url: '/auth/login', method: 'POST' },
+          { url: '/auth/refresh', method: 'POST' },
         ],
         jwtSecret: global.env.JWT_ACCESS_SECRET,
         cookieSecret: global.env.COOKIE_SECRET,
@@ -121,8 +124,10 @@ export const runServer = async () => {
       }),
     );
 
-  await loadREST(server);
-  await loadGraphQL(server);
+  //@ts-ignore
+  server = await loadREST(server);
+  //@ts-ignore
+  server = await loadGraphQL(server);
 
   return server;
 };

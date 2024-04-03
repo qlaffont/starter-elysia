@@ -3,12 +3,13 @@ import { yoga } from '@elysiajs/graphql-yoga';
 import { buildTypeDefsAndResolvers } from 'type-graphql';
 import { pluginUnifyElysiaGraphQL } from 'unify-elysia-gql';
 
+import { AuthResolver } from '../components/auth/authResolver';
 import { PingResolver } from '../components/ping/pingResolver';
 import { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
 
 export const loadGraphQL = async (server: ElysiaServer) => {
-  const resolvers = [PingResolver];
+  const resolvers = [PingResolver, AuthResolver];
 
   for (const resolver of resolvers) {
     //@ts-ignore
@@ -32,8 +33,14 @@ export const loadGraphQL = async (server: ElysiaServer) => {
             return handleQueryAndResolver(next)();
           },
         ],
+        authChecker: ({ context }) => {
+          return !!context.user;
+        },
       })),
       graphiql: isDevelopmentEnv(),
+      context: (req) => {
+        return { user: req.request };
+      },
     }),
   );
 };
