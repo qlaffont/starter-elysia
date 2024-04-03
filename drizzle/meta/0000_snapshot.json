@@ -1,5 +1,5 @@
 {
-  "id": "68f1ed43-d34f-4b54-923a-89eca96a83c2",
+  "id": "f632e97a-8cc9-433f-b075-1e62878557cc",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "5",
   "dialect": "pg",
@@ -81,6 +81,12 @@
         },
         "first_name": {
           "name": "first_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
           "type": "text",
           "primaryKey": false,
           "notNull": false

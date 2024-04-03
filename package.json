@@ -12,6 +12,7 @@
     "migration:make": "drizzle-kit generate:pg",
     "migration:up": " export $(cat .env | xargs) && bun run drizzle/migrate.ts",
     "migration:studio": "drizzle-kit studio",
+    "migration:seed": "export $(cat .env | xargs) && bun run drizzle/seed.ts | pino-pretty",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -26,7 +27,9 @@
     "@elysiajs/server-timing": "^1.0.2",
     "@elysiajs/stream": "^1.0.2",
     "@elysiajs/swagger": "^1.0.3",
+    "@faker-js/faker": "^8.4.1",
     "@t3-oss/env-core": "^0.9.2",
+    "argon2": "^0.40.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.6",
     "elysia": "^1.0.11",

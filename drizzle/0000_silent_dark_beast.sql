@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS "tokens" (
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
-	"first_name" text,
+	"first_name" text NOT NULL,
+	"last_name" text,
 	"email" text NOT NULL,
 	"password" text NOT NULL,
 	"reset_password_code" text,
