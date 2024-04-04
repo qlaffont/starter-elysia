@@ -1,7 +1,8 @@
-import { Arg, Authorized, Mutation, Query, Resolver } from 'type-graphql';
+import { Arg, Mutation, Query, Resolver } from 'type-graphql';
 
+import { Authorized } from '../../services/graphql/Authorized';
+import { CurrentUser } from '../../services/graphql/CurrentUser';
 import { RateLimitDirective } from '../../services/graphql/directives/rate-limit';
-import { CurrentUser } from '../../services/graphql/user';
 import AuthController from './authController';
 import { User, UserRegister } from './authType';
 

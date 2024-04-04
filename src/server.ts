@@ -13,12 +13,22 @@ import { pluginUnifyElysia } from 'unify-elysia';
 
 import { loadGraphQL } from './loader/GraphQLLoader';
 import { loadREST } from './loader/RESTLoader';
-import { isDevelopmentEnv } from './services/env';
+import {
+  isDevelopmentEnv,
+  isPreProductionEnv,
+  isProductionEnv,
+} from './services/env';
 
 export const runServer = async () => {
   const origin = isDevelopmentEnv() ? true : /(myapp\.qlaffont\.com)$/;
 
-  let server = new Elysia()
+  let server = new Elysia({
+    cookie: {
+      httpOnly: true,
+      path: '/',
+      secure: isPreProductionEnv() || isProductionEnv(),
+    },
+  })
     .use(
       pluginGracefulServer({
         serverIsReadyOnStart: true,

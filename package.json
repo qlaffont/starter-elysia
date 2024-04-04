@@ -18,9 +18,6 @@
   "lint-staged": {
     "*.ts": "eslint --fix"
   },
-  "resolutions": {
-    "graphql": "^15.3.0"
-  },
   "dependencies": {
     "@elysiajs/cors": "^1.0.2",
     "@elysiajs/graphql-yoga": "^1.0.2",
@@ -33,7 +30,7 @@
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.6",
     "elysia": "^1.0.11",
-    "elysia-auth-drizzle": "^1.0.4",
+    "elysia-auth-drizzle": "^1.1.2",
     "elysia-helmet": "^1.0.2",
     "elysia-rate-limit": "^3.1.1",
     "graceful-server-elysia": "^1.0.4",
@@ -42,9 +39,10 @@
     "lodash": "^4.17.21",
     "pino": "^8.19.0",
     "reflect-metadata": "^0.2.2",
-    "type-graphql": "1.1.1",
+    "timestring": "^7.0.0",
+    "type-graphql": "2.0.0-beta.6",
     "unify-elysia": "^1.0.9",
-    "unify-elysia-gql": "^1.0.4",
+    "unify-elysia-gql": "^1.0.5",
     "unify-errors": "1.2.229",
     "zod": "^3.22.4"
   },

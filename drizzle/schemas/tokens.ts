@@ -9,7 +9,7 @@ export const Tokens = pgTable(
 
     ownerId: uuid('owner_id')
       .notNull()
-      .references(() => Users.id),
+      .references(() => Users.id, { onDelete: 'cascade' }),
 
     accessToken: text('access_token').notNull(),
     refreshToken: text('refresh_token').notNull(),

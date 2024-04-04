@@ -8,6 +8,7 @@ import {
   refreshUserToken,
   removeUserToken,
 } from 'elysia-auth-drizzle';
+import timestring from 'timestring';
 import { BadRequest } from 'unify-errors';
 
 import { CryptoUtils } from '../../services/crypto/crypto';
@@ -31,9 +32,8 @@ class AuthController {
     });
 
     cookie.refresh.set({
-      path: '/',
-      httpOnly: true,
       value: refreshToken,
+      maxAge: timestring(env.JWT_REFRESH_TIME!),
     });
 
     return { access_token: accessToken };
@@ -90,8 +90,6 @@ class AuthController {
     })(accessToken!);
 
     req.cookie!.refresh.set({
-      path: '/',
-      httpOnly: true,
       value: undefined,
     });
 
@@ -119,8 +117,6 @@ class AuthController {
       };
     } catch (error) {
       req.cookie!.refresh.set({
-        path: '/',
-        httpOnly: true,
         value: undefined,
       });
       throw new BadRequest();

@@ -4,11 +4,11 @@ import { runServer } from './server';
 import { currentEnv, env, isProductionEnv } from './services/env';
 
 (async () => {
-  const logger = pino();
-  global.logger = logger;
   global.env = env;
 
   const logLevel = global.env.LOG || 'info';
+  const logger = pino({ level: logLevel });
+  global.logger = logger;
 
   const elysia = await runServer();
 
