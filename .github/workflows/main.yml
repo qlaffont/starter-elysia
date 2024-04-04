@@ -32,14 +32,14 @@ jobs:
 
       - run: bun install
 
+      - name: Add .Env
+        run: cp .env.example .env 
+
       - name: Migration Up
         run: bun run migration:up
 
       - name: Lint
         run: bun lint
-
-      - name: Test
-        run: cp .env.example .env && bun run migration:up 
 
       - name: Test
         run: bun test
