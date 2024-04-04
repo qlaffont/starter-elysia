@@ -1,0 +1,45 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    name: Build, lint, and test on latest Bun 
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: docker
+          POSTGRES_PASSWORD: docker
+          POSTGRES_DB: project
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v1
+
+      - run: bun install
+
+      - name: Migration Up
+        run: bun run migration:up
+
+      - name: Lint
+        run: bun lint
+
+      - name: Test
+        run: cp .env.example .env && bun run migration:up 
+
+      - name: Test
+        run: bun test
