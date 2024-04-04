@@ -1,4 +1,4 @@
-import { Users } from '@db/schemas';
+import type { Users } from '@db/schemas';
 import { createMethodDecorator } from 'type-graphql';
 import { Unauthorized } from 'unify-errors';
 

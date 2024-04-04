@@ -1,12 +1,10 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
-
 import { t } from 'elysia';
 
-import { ElysiaServer } from '../../server';
+import type { ElysiaServer } from '../../server';
 import AuthController from './authController';
 import { JWTRequiredSchema } from './authSchema';
 
-export const AuthRoutes = function (server: ElysiaServer) {
+export const AuthRoutes = (server: ElysiaServer) => {
   let app = server;
 
   app = app.post(

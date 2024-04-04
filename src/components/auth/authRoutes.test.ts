@@ -1,9 +1,7 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import 'reflect-metadata';
 
-import { db } from '@db/connection';
-import { Tokens, Users } from '@db/schemas';
-import { equal, notEqual } from 'assert';
+import { equal, notEqual } from 'node:assert';
+
 import {
   afterAll,
   beforeAll,
@@ -12,16 +10,18 @@ import {
   expect,
   test,
 } from 'bun:test';
+import { db } from '@db/connection';
+import { Tokens, Users } from '@db/schemas';
 import { eq } from 'drizzle-orm';
 
 import { testRoute } from '../../../test/utils/rest';
 import {
-  createUserAndGetAccessToken,
   DEFAULT_PASSWORD,
+  createUserAndGetAccessToken,
   setupTests,
 } from '../../../test/utils/setup';
 import { runServer } from '../../server';
-import { User } from './authType';
+import type { User } from './authType';
 
 setupTests();
 
@@ -49,7 +49,7 @@ describe('Auth ROUTES', async () => {
     test('should return Not Found by default', async () => {
       await testRoute(
         server,
-        `/this-is-a-random-url`,
+        '/this-is-a-random-url',
         'GET',
         {},
         {
@@ -69,7 +69,7 @@ describe('Auth ROUTES', async () => {
     test('should login user', async () => {
       const response = await testRoute(
         server,
-        `/auth/login`,
+        '/auth/login',
         'POST',
         {
           body: goodPayload,
@@ -85,7 +85,7 @@ describe('Auth ROUTES', async () => {
     test('should not allow inexisting account', async () => {
       await testRoute(
         server,
-        `/auth/login`,
+        '/auth/login',
         'POST',
         {
           body: { ...goodPayload, email: 'unknown@mail.com' },
@@ -106,7 +106,7 @@ describe('Auth ROUTES', async () => {
     test('should not allow wrong password', async () => {
       await testRoute(
         server,
-        `/auth/login`,
+        '/auth/login',
         'POST',
         {
           body: { ...goodPayload, password: 'bad' },
@@ -129,7 +129,7 @@ describe('Auth ROUTES', async () => {
     test('should be able to generate access token', async () => {
       const response = await testRoute(
         server,
-        `/auth/refresh`,
+        '/auth/refresh',
         'POST',
         {
           headers: {
@@ -145,7 +145,7 @@ describe('Auth ROUTES', async () => {
     test('should return a 400 if no refresh', async () => {
       await testRoute(
         server,
-        `/auth/refresh`,
+        '/auth/refresh',
         'POST',
         {},
         { supposedStatus: 400 },
@@ -154,11 +154,11 @@ describe('Auth ROUTES', async () => {
   });
 
   describe('logout', async () => {
-    let token;
+    let token: string;
     beforeEach(async () => {
       const res = await testRoute(
         server,
-        `/auth/login`,
+        '/auth/login',
         'POST',
         {
           body: { email, password: DEFAULT_PASSWORD },
@@ -173,7 +173,7 @@ describe('Auth ROUTES', async () => {
     test('requires a bearer token', async () => {
       await testRoute(
         server,
-        `/auth/logout`,
+        '/auth/logout',
         'POST',
         {},
         {
@@ -195,7 +195,7 @@ describe('Auth ROUTES', async () => {
     test('should logout user', async () => {
       await testRoute(
         server,
-        `/auth/logout`,
+        '/auth/logout',
         'POST',
         {
           headers: {
@@ -217,11 +217,11 @@ describe('Auth ROUTES', async () => {
     test('requires a valid bearer token', async () => {
       await testRoute(
         server,
-        `/auth/logout`,
+        '/auth/logout',
         'POST',
         {
           headers: {
-            authorization: `Bearer aBadToken`,
+            authorization: 'Bearer aBadToken',
           },
         },
         {

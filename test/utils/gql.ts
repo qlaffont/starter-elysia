@@ -26,7 +26,7 @@ export const testIfAccessTokenIsInvalidQuery = async (
   const res = await testRoute(server, '/graphql', 'POST', {
     body: { query: gql, variables },
     headers: {
-      authorization: `Bearer badToken`,
+      authorization: 'Bearer badToken',
     },
   });
 
@@ -53,7 +53,7 @@ export const testIfAccessTokenIsInvalidMutation = async (
   const res = await testRoute(server, '/graphql', 'POST', {
     body: { query: gql, variables },
     headers: {
-      authorization: `Bearer badToken`,
+      authorization: 'Bearer badToken',
     },
   });
 

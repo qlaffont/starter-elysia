@@ -1,36 +1,33 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/ban-types */
-/* eslint-disable prefer-rest-params */
+export type ClassDecorator = <TFunction extends Function>(
+  target: TFunction,
+) => TFunction | void;
 
-export interface ClassDecorator {
-  <TFunction extends Function>(target: TFunction): TFunction | void;
-}
+export type PropertyDecorator = (
+  target: Object,
+  propertyKey: string | symbol,
+) => void;
 
-export interface PropertyDecorator {
-  (target: Object, propertyKey: string | symbol): void;
-}
+export type MethodDecorator = <T>(
+  target: Object,
+  propertyKey: string | symbol,
+  descriptor: TypedPropertyDescriptor<T>,
+) => TypedPropertyDescriptor<T> | void;
 
-export interface MethodDecorator {
-  <T>(
-    target: Object,
-    propertyKey: string | symbol,
-    descriptor: TypedPropertyDescriptor<T>,
-  ): TypedPropertyDescriptor<T> | void;
-}
-
-export interface ParameterDecorator {
-  (target: Object, propertyKey: string | symbol, parameterIndex: number): void;
-}
+export type ParameterDecorator = (
+  target: Object,
+  propertyKey: string | symbol,
+  parameterIndex: number,
+) => void;
 
 /**
  * Enum for decorator type
  */
 export enum DecoratorType {
-  Class,
-  Parameter,
-  Property,
-  Method,
-  None,
+  Class = 0,
+  Parameter = 1,
+  Property = 2,
+  Method = 3,
+  None = 4,
 }
 
 /**
@@ -39,7 +36,6 @@ export enum DecoratorType {
  * @returns {DecoratorType}
  */
 export function getDecoratorTypeFromArguments(args: IArguments): DecoratorType {
-  'use strict';
   if (args.length === 0 || args.length > 3) {
     return DecoratorType.None;
   }
@@ -69,7 +65,6 @@ export function isClassDecorator(
   decorator: Function,
   args: IArguments,
 ): decorator is ClassDecorator {
-  'use strict';
   return getDecoratorTypeFromArguments(args) === DecoratorType.Class;
 }
 
@@ -83,7 +78,6 @@ export function isParameterDecorator(
   decorator: Function,
   args: IArguments,
 ): decorator is ParameterDecorator {
-  'use strict';
   return getDecoratorTypeFromArguments(args) === DecoratorType.Parameter;
 }
 
@@ -97,7 +91,6 @@ export function isPropertyDecorator(
   decorator: Function,
   args: IArguments,
 ): decorator is PropertyDecorator {
-  'use strict';
   return getDecoratorTypeFromArguments(args) === DecoratorType.Property;
 }
 
@@ -111,7 +104,6 @@ export function isMethodDecorator(
   decorator: Function,
   args: IArguments,
 ): decorator is MethodDecorator {
-  'use strict';
   return getDecoratorTypeFromArguments(args) === DecoratorType.Method;
 }
 
@@ -193,8 +185,7 @@ function Conditional(
 ): MethodDecorator;
 
 function Conditional(test: any, decorator: Function): any {
-  'use strict';
-  return function (target: Object, key: string | symbol, value: any): any {
+  return (target: Object, key: string | symbol, value: any): any => {
     if (isClassDecorator(decorator, arguments)) {
       const clazz: Function = target as Function;
       const shouldDecorate: boolean =

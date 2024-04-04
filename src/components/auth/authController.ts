@@ -16,8 +16,8 @@ import {
   validateEmail,
   validatePassword,
 } from '../../services/validation/validateString';
-import { ElysiaCookie, ElysiaRequest } from '../../types/module';
-import { AuthErrors, User, UserRegister } from './authType';
+import type { ElysiaCookie, ElysiaRequest } from '../../types/module';
+import { AuthErrors, type User, type UserRegister } from './authType';
 class AuthController {
   static async loginAndGenerateToken(user: User, cookie: ElysiaCookie) {
     const { accessToken, refreshToken } = await createUserToken({

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import 'reflect-metadata';
 
 import { db } from '@db/connection';
@@ -6,7 +5,10 @@ import { Tokens, Users } from '@db/schemas';
 import { cors } from '@elysiajs/cors';
 import { serverTiming } from '@elysiajs/server-timing';
 import Elysia from 'elysia';
-import { elysiaAuthDrizzlePlugin, ElysiaUrlConfig } from 'elysia-auth-drizzle';
+import {
+  type ElysiaUrlConfig,
+  elysiaAuthDrizzlePlugin,
+} from 'elysia-auth-drizzle';
 import { helmet } from 'elysia-helmet';
 import { pluginGracefulServer } from 'graceful-server-elysia';
 import { pluginUnifyElysia } from 'unify-elysia';
@@ -36,7 +38,6 @@ export const runServer = async () => {
     )
     .use(
       pluginUnifyElysia({
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         //@ts-ignore
         logInstance: global.logger,
         disableDetails: !isDevelopmentEnv(),
@@ -65,18 +66,18 @@ export const runServer = async () => {
         contentSecurityPolicy: {
           directives: {
             defaultSrc: [`'self'`],
-            imgSrc: [`data:`, `https:`],
+            imgSrc: ['data:', 'https:'],
             objectSrc: [`'none'`],
             scriptSrc: [
-              `cdn.jsdelivr.net`,
-              `stackpath.bootstrapcdn.com`,
+              'cdn.jsdelivr.net',
+              'stackpath.bootstrapcdn.com',
               'unpkg.com',
               `'self'`,
               `'unsafe-inline'`,
             ],
             styleSrc: [
-              `fonts.googleapis.com`,
-              `stackpath.bootstrapcdn.com`,
+              'fonts.googleapis.com',
+              'stackpath.bootstrapcdn.com',
               'unpkg.com',
               `'self'`,
               `'unsafe-inline'`,

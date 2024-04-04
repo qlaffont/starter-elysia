@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { db } from '@db/connection';
 import { Tokens, Users } from '@db/schemas';
 import { yoga } from '@elysiajs/graphql-yoga';
@@ -9,10 +8,10 @@ import {
 import { buildTypeDefsAndResolvers } from 'type-graphql';
 import { pluginUnifyElysiaGraphQL } from 'unify-elysia-gql';
 
-import { HTTPMethods } from '../../test/utils/rest';
+import type { HTTPMethods } from '../../test/utils/rest';
 import { AuthResolver } from '../components/auth/authResolver';
 import { PingResolver } from '../components/ping/pingResolver';
-import { ElysiaServer } from '../server';
+import type { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
 
 const parseCookie = (str) => {
@@ -37,7 +36,6 @@ export const loadGraphQL = async (server: ElysiaServer) => {
   }
 
   const { handleQueryAndResolver } = pluginUnifyElysiaGraphQL({
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
     logInstance: global.logger,
     disableDetails: !isDevelopmentEnv(),
@@ -99,7 +97,6 @@ export const loadGraphQL = async (server: ElysiaServer) => {
           if (res) {
             context.user = res.connectedUser;
           }
-          // eslint-disable-next-line no-empty
         } catch (error) {}
 
         return context;

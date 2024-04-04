@@ -4,7 +4,7 @@ import { startCase } from 'lodash';
 
 import { AuthRoutes } from '../components/auth/authRoutes';
 import { PingRoutes } from '../components/ping/pingRoutes';
-import { ElysiaServer } from '../server';
+import type { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
 
 export const loadREST = async (app: ElysiaServer) => {
@@ -46,7 +46,6 @@ export const loadREST = async (app: ElysiaServer) => {
 
   for (const route of routes) {
     const [[prefix, fastifyRoutes]] = Object.entries(route);
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
     server = server.group(prefix, (app) => fastifyRoutes(app));
     const routeName = startCase(prefix.substring(1).replaceAll('/', ' '));
@@ -59,7 +58,6 @@ export const loadREST = async (app: ElysiaServer) => {
   const softName = pkg?.name;
 
   if (isDevelopmentEnv()) {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
     server = server.use(
       swagger({

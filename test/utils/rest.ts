@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { expect } from 'bun:test';
 
 export type HTTPMethods =
@@ -21,17 +19,22 @@ export type HTTPMethods =
   | 'SEARCH';
 
 export const testRoute = async (
+  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   server: any,
   routePath: string,
   method: HTTPMethods,
   data: {
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     headers?: Record<string, any>;
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     body?: Record<string, any>;
   },
   validation?: {
     supposedStatus?: number;
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     supposedMessage?: string | Record<string, any>;
     notSupposedStatus?: number;
+    // biome-ignore lint/suspicious/noExplicitAny: <explanation>
     notSupposedMessage?: string | Record<string, any>;
   },
 ): Promise<unknown> => {
@@ -72,13 +75,11 @@ export const testRoute = async (
           content = await res.json();
           json = true;
           return;
-          // eslint-disable-next-line no-empty
         } catch (error) {}
 
         try {
           content = await res.text();
           return;
-          // eslint-disable-next-line no-empty
         } catch (error) {}
 
         return;

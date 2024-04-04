@@ -1,10 +1,7 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable no-var */
-/* eslint-disable @typescript-eslint/no-namespace */
-import { Cookie } from 'elysia';
-import { Logger } from 'pino';
+import type { Cookie } from 'elysia';
+import type { Logger } from 'pino';
 
-import { env as ENV } from '../services/env';
+import type { env as ENV } from '../services/env';
 
 declare global {
   namespace globalThis {
@@ -14,6 +11,7 @@ declare global {
 }
 
 //Ref : https://github.com/elysiajs/elysia/blob/main/src/context.ts#L50
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export type ElysiaCookie = Record<string, Cookie<any>>;
 
 export type ElysiaRequest = {

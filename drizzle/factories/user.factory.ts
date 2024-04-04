@@ -1,4 +1,4 @@
-import { Users } from '@db/schemas';
+import type { Users } from '@db/schemas';
 import { faker } from '@faker-js/faker';
 
 import { CryptoUtils } from '../../src/services/crypto/crypto';

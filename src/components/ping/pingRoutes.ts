@@ -1,6 +1,6 @@
 import { Stream } from '@elysiajs/stream';
 
-import { ElysiaServer } from '../../server';
+import type { ElysiaServer } from '../../server';
 import { JWTRequiredSchema } from '../auth/authSchema';
 
 export const PingRoutes = (server: ElysiaServer) => {

@@ -1,9 +1,8 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import 'reflect-metadata';
 
+import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
 import { db } from '@db/connection';
 import { Users } from '@db/schemas';
-import { afterAll, beforeAll, describe, expect, test } from 'bun:test';
 import { eq } from 'drizzle-orm';
 import set from 'lodash/set';
 
@@ -16,14 +15,14 @@ import {
   testPasswordValidation,
 } from '../../../test/utils/gql';
 import {
-  createUserAndGetAccessToken,
   DEFAULT_PASSWORD,
+  createUserAndGetAccessToken,
   setupTests,
 } from '../../../test/utils/setup';
 import { runServer } from '../../server';
 import { CryptoUtils } from '../../services/crypto/crypto';
 import AuthController from './authController';
-import { AuthErrors, User, UserRegister } from './authType';
+import { AuthErrors, type User, type UserRegister } from './authType';
 
 setupTests();
 
@@ -167,13 +166,12 @@ describe('Auth Resolver', async () => {
       data: { changePassword: 'OK' },
     };
 
-    let token;
+    let token: string;
     beforeAll(async () => {
       const res = await AuthController.loginAndGenerateToken(user, {
         //@ts-ignore
         refresh: {
           //@ts-ignore
-          // eslint-disable-next-line @typescript-eslint/no-empty-function
           set: () => {},
         },
       });
@@ -256,13 +254,12 @@ describe('Auth Resolver', async () => {
       data: { askResetPassword: 'OK' },
     };
 
-    let token;
+    let token: string;
     beforeAll(async () => {
       const res = await AuthController.loginAndGenerateToken(user, {
         //@ts-ignore
         refresh: {
           //@ts-ignore
-          // eslint-disable-next-line @typescript-eslint/no-empty-function
           set: () => {},
         },
       });
@@ -320,13 +317,12 @@ describe('Auth Resolver', async () => {
       data: { resetPassword: 'OK' },
     };
 
-    let token;
+    let token: string;
     beforeAll(async () => {
       const res = await AuthController.loginAndGenerateToken(user, {
         //@ts-ignore
         refresh: {
           //@ts-ignore
-          // eslint-disable-next-line @typescript-eslint/no-empty-function
           set: () => {},
         },
       });

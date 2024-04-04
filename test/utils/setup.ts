@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { db } from '@db/connection';
 import { eq } from 'drizzle-orm';
 import pino from 'pino';
@@ -6,7 +5,7 @@ import pino from 'pino';
 import { userFactory } from '../../drizzle/factories';
 import { Tokens, Users } from '../../drizzle/schemas';
 import AuthController from '../../src/components/auth/authController';
-import { User } from '../../src/components/auth/authType';
+import type { User } from '../../src/components/auth/authType';
 import { env } from '../../src/services/env';
 
 export const DEFAULT_PASSWORD = 'password';

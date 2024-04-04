@@ -12,7 +12,7 @@ export const env = createEnv({
     PORT: z
       .string()
       .default('3000')
-      .transform((s) => parseInt(s)),
+      .transform((s) => Number.parseInt(s)),
 
     API_URL: z.string().url(),
     CLIENT_URL: z.string().url(),
