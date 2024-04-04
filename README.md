@@ -5,6 +5,17 @@
 - Bun
 - Postgres database ( or Docker for development )
 
+## Features
+
+- Elysia
+- REST
+- GraphQL (Yoga)
+- ORM (Drizzle)
+- Authentication
+- Rate Limit (REST/GraphQL)
+- Unify all errors from `unify-errors`
+- Test included
+
 ## How to start the project ?
 
 ### Local
