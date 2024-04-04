@@ -18,6 +18,17 @@ import {
 } from '../../services/validation/validateString';
 import type { ElysiaCookie, ElysiaRequest } from '../../types/module';
 import { AuthErrors, type User, type UserRegister } from './authType';
+
+export const waitRandom = (): Promise<void> => {
+  const min = 1000;
+  const max = 5000;
+  const delay = Math.random() * (max - min) + min;
+
+  // TODO to enable it
+  // return new Promise((resolve) => setTimeout(resolve, delay));
+  return new Promise((resolve) => setTimeout(resolve, 1000));
+};
+
 class AuthController {
   static async loginAndGenerateToken(user: User, cookie: ElysiaCookie) {
     const { accessToken, refreshToken } = await createUserToken({
@@ -71,10 +82,12 @@ class AuthController {
     });
 
     if (!user) {
+      await waitRandom();
       throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
     if (!(await CryptoUtils.compareArgonHash(password, user.password))) {
+      await waitRandom();
       throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
@@ -139,6 +152,7 @@ class AuthController {
     });
 
     if (!user) {
+      await waitRandom();
       throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
@@ -160,6 +174,7 @@ class AuthController {
     });
 
     if (!user) {
+      await waitRandom();
       throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 
@@ -183,6 +198,7 @@ class AuthController {
     });
 
     if (!user) {
+      await waitRandom();
       throw new BadRequest({ error: AuthErrors.account_not_found });
     }
 

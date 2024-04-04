@@ -12,8 +12,9 @@ export const loadREST = async (app: ElysiaServer) => {
     rateLimit({
       duration: 60 * 1000,
       max: 5,
-      responseMessage: 'Too many requests, please try again later',
       countFailedRequest: true,
+      responseCode: 429,
+      responseMessage: 'Too many requests, please try again later',
       skip: (request) => {
         const urls = [
           '/swagger',
@@ -29,8 +30,7 @@ export const loadREST = async (app: ElysiaServer) => {
             return true;
           }
         }
-
-        return true;
+        return false;
       },
     }),
   );
