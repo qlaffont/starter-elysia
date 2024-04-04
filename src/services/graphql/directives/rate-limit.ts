@@ -1,7 +1,11 @@
 import { rateLimitDirective as rld } from 'graphql-rate-limit-directive';
 import { Directive } from 'type-graphql';
 
-import { isPreProductionEnv, isProductionEnv } from '../../../services/env';
+import {
+  isDevelopmentEnv,
+  isPreProductionEnv,
+  isProductionEnv,
+} from '../../../services/env';
 import Conditional from './conditional';
 
 const { rateLimitDirectiveTypeDefs, rateLimitDirectiveTransformer } = rld();
