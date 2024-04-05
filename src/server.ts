@@ -56,6 +56,8 @@ export const runServer = async () => {
           'Set-Cookie',
           'set-cookie',
           'Cookie',
+          'RateLimit-Remaining',
+          'Retry-After',
         ],
         origin,
         credentials: true,
