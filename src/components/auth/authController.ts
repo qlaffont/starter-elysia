@@ -22,6 +22,7 @@ import { AuthErrors, type User, type UserRegister } from './authType';
 export const waitRandom = (): Promise<void> => {
   const min = 1000;
   const max = 5000;
+  // biome-ignore lint/correctness/noUnusedVariables: <explanation>
   const delay = Math.random() * (max - min) + min;
 
   // TODO to enable it
@@ -128,7 +129,7 @@ class AuthController {
       return {
         access_token: accessToken,
       };
-    } catch (error) {
+    } catch (_error) {
       req.cookie!.refresh.set({
         value: undefined,
       });

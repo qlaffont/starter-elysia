@@ -47,7 +47,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
         //@ts-ignore
         resolvers: resolvers,
         globalMiddlewares: [
-          async (result, next) => {
+          async (_, next) => {
             return handleQueryAndResolver(next)();
           },
         ],
@@ -97,7 +97,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
           if (res) {
             context.user = res.connectedUser;
           }
-        } catch (error) {}
+        } catch (_error) {}
 
         return context;
       },

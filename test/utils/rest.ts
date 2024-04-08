@@ -75,12 +75,12 @@ export const testRoute = async (
           content = await res.json();
           json = true;
           return;
-        } catch (error) {}
+        } catch (_error) {}
 
         try {
           content = await res.text();
           return;
-        } catch (error) {}
+        } catch (_error) {}
 
         return;
       },
