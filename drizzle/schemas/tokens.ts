@@ -1,13 +1,19 @@
 import { index, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 
+import { newId } from '../idGeneration';
 import { Users } from './users';
 
 export const Tokens = pgTable(
   'tokens',
   {
-    id: uuid('id').notNull().defaultRandom(),
+    id: text('id')
+      .notNull()
+      .$defaultFn(() => {
+        return newId('tokens');
+      })
+      .primaryKey(),
 
-    ownerId: uuid('owner_id')
+    ownerId: text('owner_id')
       .notNull()
       .references(() => Users.id, { onDelete: 'cascade' }),
 

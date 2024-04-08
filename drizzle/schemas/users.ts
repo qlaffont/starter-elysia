@@ -1,9 +1,15 @@
 import { index, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
+import { newId } from '../idGeneration';
 
 export const Users = pgTable(
   'users',
   {
-    id: uuid('id').notNull().defaultRandom().primaryKey(),
+    id: text('id')
+      .notNull()
+      .$defaultFn(() => {
+        return newId('users');
+      })
+      .primaryKey(),
 
     firstName: text('first_name').notNull(),
     lastName: text('last_name'),

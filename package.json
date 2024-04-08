@@ -37,6 +37,7 @@
     "graphql-rate-limit-directive": "^2.0.5",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
+    "nanoid": "^5.0.7",
     "pino": "^8.19.0",
     "reflect-metadata": "^0.2.2",
     "timestring": "^7.0.0",

@@ -1,13 +1,13 @@
 CREATE TABLE IF NOT EXISTS "tokens" (
-	"id" uuid DEFAULT gen_random_uuid() NOT NULL,
-	"owner_id" uuid NOT NULL,
+	"id" text PRIMARY KEY NOT NULL,
+	"owner_id" text NOT NULL,
 	"access_token" text NOT NULL,
 	"refresh_token" text NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "users" (
-	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"id" text PRIMARY KEY NOT NULL,
 	"first_name" text NOT NULL,
 	"last_name" text,
 	"email" text NOT NULL,
