@@ -56,6 +56,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
     },
   });
 
+  //Apply RateLimit Directive
   schema = mergeSchemas({
     schemas: [schema],
     typeDefs: [rateLimitDirective.typeDefs],
