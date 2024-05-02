@@ -5,7 +5,7 @@ import { startCase } from 'lodash';
 import { AuthRoutes } from '../components/auth/authRoutes';
 import { PingRoutes } from '../components/ping/pingRoutes';
 import type { ElysiaServer } from '../server';
-import { isDevelopmentEnv } from '../services/env';
+import { isDevelopmentEnv, isTestEnv } from '../services/env';
 
 export const loadREST = async (app: ElysiaServer) => {
   let server = app.use(
@@ -30,6 +30,12 @@ export const loadREST = async (app: ElysiaServer) => {
             return true;
           }
         }
+
+        //Disable rate limit for test
+        if (isTestEnv()) {
+          return true;
+        }
+
         return false;
       },
     }),
