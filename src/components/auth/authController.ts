@@ -22,12 +22,9 @@ import { AuthErrors, type User, type UserRegister } from './authType';
 export const waitRandom = (): Promise<void> => {
   const min = 1000;
   const max = 5000;
-  // biome-ignore lint/correctness/noUnusedVariables: <explanation>
   const delay = Math.random() * (max - min) + min;
 
-  // TODO to enable it
-  // return new Promise((resolve) => setTimeout(resolve, delay));
-  return new Promise((resolve) => setTimeout(resolve, 1000));
+  return new Promise((resolve) => setTimeout(resolve, delay));
 };
 
 class AuthController {

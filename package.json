@@ -29,7 +29,7 @@
     "argon2": "^0.40.1",
     "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.7",
-    "elysia": "^1.0.15",
+    "elysia": "^1.0.16",
     "elysia-auth-drizzle": "^1.1.2",
     "elysia-helmet": "^1.0.2",
     "elysia-rate-limit": "^3.2.2",
@@ -42,9 +42,9 @@
     "reflect-metadata": "^0.2.2",
     "timestring": "^7.0.0",
     "type-graphql": "2.0.0-beta.6",
-    "unify-elysia": "^1.0.9",
-    "unify-elysia-gql": "^1.0.5",
-    "unify-errors": "^1.2.233",
+    "unify-elysia": "^1.1.0",
+    "unify-elysia-gql": "^1.1.0",
+    "unify-errors": "^1.3.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
