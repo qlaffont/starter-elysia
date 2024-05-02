@@ -54,6 +54,7 @@ class AuthController {
     });
 
     if (existingUser) {
+      await waitRandom();
       throw new BadRequest({ error: AuthErrors.user_already_exist });
     }
 

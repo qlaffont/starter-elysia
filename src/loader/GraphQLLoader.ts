@@ -1,12 +1,12 @@
 import { db } from '@db/connection';
 import { Tokens, Users } from '@db/schemas';
+import { yoga } from '@elysiajs/graphql-yoga';
 import { mergeSchemas } from '@graphql-tools/schema';
 import {
   checkTokenValidity,
   getAccessTokenFromRequest,
 } from 'elysia-auth-drizzle';
-import { yoga } from 'elysia-graphql-yoga-schema';
-import { buildSchema, buildTypeDefsAndResolvers } from 'type-graphql';
+import { buildSchema } from 'type-graphql';
 import { pluginUnifyElysiaGraphQL } from 'unify-elysia-gql';
 
 import type { HTTPMethods } from '../../test/utils/rest';
