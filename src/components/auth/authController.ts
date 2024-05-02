@@ -12,6 +12,7 @@ import timestring from 'timestring';
 import { BadRequest } from 'unify-errors';
 
 import { CryptoUtils } from '../../services/crypto/crypto';
+import { isTestEnv } from '../../services/env';
 import {
   validateEmail,
   validatePassword,
@@ -23,6 +24,11 @@ export const waitRandom = (): Promise<void> => {
   const min = 1000;
   const max = 5000;
   const delay = Math.random() * (max - min) + min;
+
+  //Ignore Rate limit for test
+  if (isTestEnv()) {
+    return new Promise((resolve) => resolve());
+  }
 
   return new Promise((resolve) => setTimeout(resolve, delay));
 };
