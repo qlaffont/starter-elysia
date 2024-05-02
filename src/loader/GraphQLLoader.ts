@@ -1,11 +1,12 @@
 import { db } from '@db/connection';
 import { Tokens, Users } from '@db/schemas';
 import { yoga } from '@elysiajs/graphql-yoga';
+import { mergeSchemas } from '@graphql-tools/schema';
 import {
   checkTokenValidity,
   getAccessTokenFromRequest,
 } from 'elysia-auth-drizzle';
-import { buildTypeDefsAndResolvers } from 'type-graphql';
+import { buildSchema } from 'type-graphql';
 import { pluginUnifyElysiaGraphQL } from 'unify-elysia-gql';
 
 import type { HTTPMethods } from '../../test/utils/rest';
@@ -13,6 +14,7 @@ import { AuthResolver } from '../components/auth/authResolver';
 import { PingResolver } from '../components/ping/pingResolver';
 import type { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
+import { rateLimitDirective } from '../services/graphql/directives/rate-limit';
 
 const parseCookie = (str) => {
   if (str?.length > 1) {
@@ -41,20 +43,30 @@ export const loadGraphQL = async (server: ElysiaServer) => {
     disableDetails: !isDevelopmentEnv(),
   });
 
+  let schema = await buildSchema({
+    //@ts-ignore
+    resolvers: resolvers,
+    globalMiddlewares: [
+      async (_result, next) => {
+        return handleQueryAndResolver(next)();
+      },
+    ],
+    authChecker: ({ context }) => {
+      return !!context.user;
+    },
+  });
+
+  //Apply RateLimit Directive
+  schema = mergeSchemas({
+    schemas: [schema],
+    typeDefs: [rateLimitDirective.typeDefs],
+  });
+  schema = rateLimitDirective.transformer(schema);
+
   return server.use(
+    //@ts-ignore
     yoga({
-      ...(await buildTypeDefsAndResolvers({
-        //@ts-ignore
-        resolvers: resolvers,
-        globalMiddlewares: [
-          async (_, next) => {
-            return handleQueryAndResolver(next)();
-          },
-        ],
-        authChecker: ({ context }) => {
-          return !!context.user;
-        },
-      })),
+      schema,
       graphiql: isDevelopmentEnv(),
       context: async ({ request }) => {
         const context: { user? } = {};
