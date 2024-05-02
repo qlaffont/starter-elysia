@@ -47,7 +47,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
     //@ts-ignore
     resolvers: resolvers,
     globalMiddlewares: [
-      async (result, next) => {
+      async (_result, next) => {
         return handleQueryAndResolver(next)();
       },
     ],
@@ -65,18 +65,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
   return server.use(
     //@ts-ignore
     yoga({
-      ...(await buildTypeDefsAndResolvers({
-        //@ts-ignore
-        resolvers: resolvers,
-        globalMiddlewares: [
-          async (_, next) => {
-            return handleQueryAndResolver(next)();
-          },
-        ],
-        authChecker: ({ context }) => {
-          return !!context.user;
-        },
-      })),
+      schema,
       graphiql: isDevelopmentEnv(),
       context: async ({ request }) => {
         const context: { user? } = {};
