@@ -13,8 +13,12 @@ export const loadREST = async (app: ElysiaServer) => {
       duration: 60 * 1000,
       max: 5,
       countFailedRequest: true,
-      responseCode: 429,
-      responseMessage: 'Too many requests, please try again later',
+      errorResponse: new Response(
+        JSON.stringify({ error: 'Too many requests, please try again later' }),
+        {
+          status: 429,
+        },
+      ),
       skip: (request) => {
         const urls = [
           '/swagger',
