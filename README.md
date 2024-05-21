@@ -21,6 +21,7 @@
 ### Local
 
 - Fill environment variables to `.env` file based on `.env.example`
+- Run migrations `bun run migration:up`
 - Start server `bun dev`
 - (optional) If you want to use OpenTelemetry : `bun run dev:telemetry`
 
