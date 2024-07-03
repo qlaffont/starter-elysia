@@ -12,6 +12,7 @@ import { pluginUnifyElysiaGraphQL } from 'unify-elysia-gql';
 import type { HTTPMethods } from '../../test/utils/rest';
 import { AuthResolver } from '../components/auth/authResolver';
 import { PingResolver } from '../components/ping/pingResolver';
+import { pubSub } from '../components/ping/pubsub';
 import type { ElysiaServer } from '../server';
 import { isDevelopmentEnv } from '../services/env';
 import { rateLimitDirective } from '../services/graphql/directives/rate-limit';
@@ -54,6 +55,7 @@ export const loadGraphQL = async (server: ElysiaServer) => {
     authChecker: ({ context }) => {
       return !!context.user;
     },
+    pubSub,
   });
 
   //Apply RateLimit Directive
