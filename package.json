@@ -32,7 +32,7 @@
     "drizzle-orm": "^0.32.0",
     "elysia": "^1.0.16",
     "elysia-auth-drizzle": "^1.1.16",
-    "elysia-helmet": "^1.0.2",
+    "elysia-helmet": "^2.0.0",
     "elysia-rate-limit": "^4.0.0",
     "graceful-server-elysia": "^1.0.4",
     "graphql-rate-limit-directive": "^2.0.5",
