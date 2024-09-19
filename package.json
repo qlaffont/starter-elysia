@@ -24,7 +24,7 @@
     "@elysiajs/server-timing": "^1.0.2",
     "@elysiajs/stream": "^1.0.2",
     "@elysiajs/swagger": "^1.0.4",
-    "@faker-js/faker": "^8.4.1",
+    "@faker-js/faker": "^9.0.0",
     "@graphql-tools/schema": "^10.0.3",
     "@t3-oss/env-core": "^0.11.0",
     "argon2": "^0.41.0",
