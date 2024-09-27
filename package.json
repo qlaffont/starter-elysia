@@ -42,7 +42,7 @@
     "pino": "^9.0.0",
     "reflect-metadata": "^0.2.2",
     "timestring": "^7.0.0",
-    "type-graphql": "2.0.0-rc.1",
+    "type-graphql": "2.0.0-rc.2",
     "unify-elysia": "^1.1.0",
     "unify-elysia-gql": "^1.1.0",
     "unify-errors": "^1.3.0",
@@ -64,5 +64,6 @@
     "postgres": "^3.4.4",
     "tsup": "^8.0.2"
   },
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
 }
