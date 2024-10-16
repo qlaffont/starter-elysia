@@ -46,7 +46,7 @@ importers:
         version: 1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       elysia-auth-drizzle:
         specifier: ^1.1.16
-        version: 1.2.40(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.30)(elysia@1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.0)(postgres@3.4.4)
+        version: 1.2.43(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.30)(elysia@1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.0)(postgres@3.4.4)
       elysia-helmet:
         specifier: ^2.0.0
         version: 2.0.0(elysia@1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -1626,10 +1626,6 @@ packages:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
     engines: {node: '>=12'}
 
-  drizzle-kit@0.25.0:
-    resolution: {integrity: sha512-Rcf0nYCAKizwjWQCY+d3zytyuTbDb81NcaPor+8NebESlUz1+9W3uGl0+r9FhU4Qal5Zv9j/7neXCSCe7DHzjA==}
-    hasBin: true
-
   drizzle-kit@0.26.1:
     resolution: {integrity: sha512-5/e1tzOPicPDooCm/uJIU9mWK3eD5dhW5EY61TQyVVo29xYxFLmZpXlBdOYlbfDHBsNhVzhb0XjWFmAAj7d7WA==}
     hasBin: true
@@ -1733,10 +1729,10 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  elysia-auth-drizzle@1.2.40:
-    resolution: {integrity: sha512-d8GndYVkYOPjCRpIiV9wSfa5ry+J2VmCwEKLCZXibsT9KmD7RrhERg2FlEH+rP87HOD3XJoKefSyYzVs7rTiEA==}
+  elysia-auth-drizzle@1.2.43:
+    resolution: {integrity: sha512-iTNXArdihmyUBu4HT9HNtWRd15VipkgSFMN2Rwxz4hcq3CMbgZKdtkvhXYOI08ge8udCQd6ALefwI2FGKPhjuA==}
     peerDependencies:
-      elysia: ^1.0.9
+      elysia: ^1.1.22
 
   elysia-helmet@2.0.0:
     resolution: {integrity: sha512-GsNmF6cZmyY0eqMotLHSvVbDdo6RYotj5e3oxJ5PHrtwpsvPSi+sj2QbyjOa+6zgfB1ekmvpDH1nUOvXbDTsTg==}
@@ -4180,15 +4176,6 @@ snapshots:
 
   dotenv@16.4.5: {}
 
-  drizzle-kit@0.25.0:
-    dependencies:
-      '@drizzle-team/brocli': 0.10.1
-      '@esbuild-kit/esm-loader': 2.6.5
-      esbuild: 0.19.12
-      esbuild-register: 3.6.0(esbuild@0.19.12)
-    transitivePeerDependencies:
-      - supports-color
-
   drizzle-kit@0.26.1:
     dependencies:
       '@drizzle-team/brocli': 0.10.1
@@ -4214,10 +4201,10 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  elysia-auth-drizzle@1.2.40(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.30)(elysia@1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.0)(postgres@3.4.4):
+  elysia-auth-drizzle@1.2.43(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.30)(elysia@1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.0)(postgres@3.4.4):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.4(elysia@1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
-      drizzle-kit: 0.25.0
+      drizzle-kit: 0.26.1
       drizzle-orm: 0.34.1(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.30)(pg@8.13.0)(postgres@3.4.4)
       elysia: 1.1.22(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
