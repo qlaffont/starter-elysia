@@ -40,13 +40,13 @@ importers:
         version: 16.4.5
       drizzle-orm:
         specifier: ^0.35.0
-        version: 0.35.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(pg@8.13.1)(postgres@3.4.4)
+        version: 0.35.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(pg@8.13.1)(postgres@3.4.5)
       elysia:
         specifier: ^1.0.16
         version: 1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       elysia-auth-drizzle:
         specifier: ^1.1.16
-        version: 1.2.45(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(elysia@1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.4)
+        version: 1.2.45(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(elysia@1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
       elysia-helmet:
         specifier: ^2.0.0
         version: 2.0.0(elysia@1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -131,7 +131,7 @@ importers:
         version: 11.3.0
       postgres:
         specifier: ^3.4.4
-        version: 3.4.4
+        version: 3.4.5
       tsup:
         specifier: ^8.0.2
         version: 8.3.4(yaml@2.5.1)
@@ -2432,8 +2432,8 @@ packages:
     resolution: {integrity: sha512-9ZhXKM/rw350N1ovuWHbGxnGh/SNJ4cnxHiM0rxE4VN41wsg8P8zWn9hv/buK00RP4WvlOyr/RBDiptyxVbkZQ==}
     engines: {node: '>=0.10.0'}
 
-  postgres@3.4.4:
-    resolution: {integrity: sha512-IbyN+9KslkqcXa8AO9fxpk97PA4pzewvpi2B3Dwy9u4zpV32QicaEdgmF3eSQUzdRk7ttDHQejNgAEr4XoeH4A==}
+  postgres@3.4.5:
+    resolution: {integrity: sha512-cDWgoah1Gez9rN3H4165peY9qfpEo+SA61oQv65O3cRUE1pOEoJWwddwcqKE8XZYjbblOJlYDlLV4h67HrEVDg==}
     engines: {node: '>=12'}
 
   process-warning@4.0.0:
@@ -4442,7 +4442,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(pg@8.13.1)(postgres@3.4.4):
+  drizzle-orm@0.35.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(pg@8.13.1)(postgres@3.4.5):
     dependencies:
       '@libsql/client-wasm': 0.14.0
     optionalDependencies:
@@ -4450,7 +4450,7 @@ snapshots:
       '@types/pg': 8.6.1
       bun-types: 1.1.33
       pg: 8.13.1
-      postgres: 3.4.4
+      postgres: 3.4.5
 
   dset@3.1.4: {}
 
@@ -4460,11 +4460,11 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  elysia-auth-drizzle@1.2.45(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(elysia@1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.4):
+  elysia-auth-drizzle@1.2.45(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(elysia@1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.4(elysia@1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       drizzle-kit: 0.26.2
-      drizzle-orm: 0.35.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(pg@8.13.1)(postgres@3.4.4)
+      drizzle-orm: 0.35.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.33)(pg@8.13.1)(postgres@3.4.5)
       elysia: 1.1.23(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.49
@@ -5092,7 +5092,7 @@ snapshots:
     dependencies:
       xtend: 4.0.2
 
-  postgres@3.4.4: {}
+  postgres@3.4.5: {}
 
   process-warning@4.0.0: {}
 
