@@ -29,7 +29,7 @@
     "@t3-oss/env-core": "^0.11.0",
     "argon2": "^0.41.0",
     "dotenv": "^16.4.5",
-    "drizzle-orm": "^0.35.0",
+    "drizzle-orm": "^0.36.0",
     "elysia": "^1.0.16",
     "elysia-auth-drizzle": "^1.1.16",
     "elysia-helmet": "^2.0.0",
