@@ -46,7 +46,7 @@ importers:
         version: 1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       elysia-auth-drizzle:
         specifier: ^1.1.16
-        version: 1.2.50(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.34)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
+        version: 1.2.51(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.34)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
       elysia-helmet:
         specifier: ^2.0.0
         version: 2.0.0(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -1726,8 +1726,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  elysia-auth-drizzle@1.2.50:
-    resolution: {integrity: sha512-gSnuUU7GAt3sVUv0uH5CuGvi1BmIfs/eLD7UB5yIyKIZh3C2bex3yFZBRbILIjxhqyUjFMDbB5lh1MZhc+tZ5Q==}
+  elysia-auth-drizzle@1.2.51:
+    resolution: {integrity: sha512-8rAJFpVDxqI4lh+0K0UkwBr3h0BadtQwUVsM5CeoqQUBONroQX5Ye02x2ubMrKdvDYw2epjFL9Gwq7scBYwkng==}
     peerDependencies:
       elysia: ^1.1.22
 
@@ -4139,7 +4139,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  elysia-auth-drizzle@1.2.50(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.34)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
+  elysia-auth-drizzle@1.2.51(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.34)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.4(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       drizzle-kit: 0.28.1
