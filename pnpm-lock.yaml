@@ -28,7 +28,7 @@ importers:
         version: 9.2.0
       '@graphql-tools/schema':
         specifier: ^10.0.3
-        version: 10.0.8(graphql@16.9.0)
+        version: 10.0.9(graphql@16.9.0)
       '@t3-oss/env-core':
         specifier: ^0.11.0
         version: 0.11.1(zod@3.23.8)
@@ -58,7 +58,7 @@ importers:
         version: 1.0.25(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       graphql-rate-limit-directive:
         specifier: ^2.0.5
-        version: 2.0.5(@graphql-tools/utils@10.5.6(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@4.0.1)
+        version: 2.0.5(@graphql-tools/utils@10.6.0(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@4.0.1)
       jsonwebtoken:
         specifier: ^9.0.2
         version: 9.0.2
@@ -685,14 +685,14 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/merge@9.0.9':
-    resolution: {integrity: sha512-w9yaU7UMRQvtkTYZHo+c7cS7LO7rqc2H6g3k0aUs8VE9YlFYG1bYdxvEPM5bloaoVqr5TmbqIZqzl1CHeJKilQ==}
+  '@graphql-tools/merge@9.0.10':
+    resolution: {integrity: sha512-sU+b6ZmKtGnqHq8S+VI5UmjZVHWzT+b+QtCsJUEXckCKdq1P3JmwIT8+8DVxSQlh1dzpiVq37EOcJrEYOBZtBA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/schema@10.0.8':
-    resolution: {integrity: sha512-jkCSq+DdT6Rf/MN3oVz250AMFWZO0E5kh0C2K+kJfS80iBW7/7kLjiSbKz+WD9UBtsJPW2zyzKYC4ylU4jmnLw==}
+  '@graphql-tools/schema@10.0.9':
+    resolution: {integrity: sha512-R/sPRLJnEHg/F7owvH1zLbfXxqrEgFyr/qSjsG1q+gWhCrxbo/+c2DVjeZEZ2/AKCLllDHTD5TOU2Y5sZGNxZg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -702,8 +702,8 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/utils@10.5.6':
-    resolution: {integrity: sha512-JAC44rhbLzXUHiltceyEpWkxmX4e45Dfg19wRFoA9EbDxQVbOzVNF76eEECdg0J1owFsJwfLqCwz7/6xzrovOw==}
+  '@graphql-tools/utils@10.6.0':
+    resolution: {integrity: sha512-bqSn2ekSNwFVZprY6YsrHkqPA7cPLNKxiPlEzS1djhfvx4q9tx7Uwc5dnLp3SSnKinJ8dJk9FA5sxNcKjCM44w==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -2752,11 +2752,11 @@ snapshots:
   '@envelop/core@3.0.6':
     dependencies:
       '@envelop/types': 3.0.2
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@envelop/types@3.0.2':
     dependencies:
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@envelop/validation-cache@5.1.3(@envelop/core@3.0.6)(graphql@16.9.0)':
     dependencies:
@@ -2764,7 +2764,7 @@ snapshots:
       graphql: 16.9.0
       hash-it: 6.0.0
       lru-cache: 6.0.0
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@esbuild-kit/core-utils@3.3.2':
     dependencies:
@@ -2991,25 +2991,25 @@ snapshots:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       '@repeaterjs/repeater': 3.0.4
       graphql: 16.9.0
-      tslib: 2.7.0
+      tslib: 2.8.1
       value-or-promise: 1.0.12
 
   '@graphql-tools/merge@8.4.2(graphql@16.9.0)':
     dependencies:
       '@graphql-tools/utils': 9.2.1(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.7.0
+      tslib: 2.8.1
 
-  '@graphql-tools/merge@9.0.9(graphql@16.9.0)':
+  '@graphql-tools/merge@9.0.10(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/utils': 10.5.6(graphql@16.9.0)
+      '@graphql-tools/utils': 10.6.0(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.0.8(graphql@16.9.0)':
+  '@graphql-tools/schema@10.0.9(graphql@16.9.0)':
     dependencies:
-      '@graphql-tools/merge': 9.0.9(graphql@16.9.0)
-      '@graphql-tools/utils': 10.5.6(graphql@16.9.0)
+      '@graphql-tools/merge': 9.0.10(graphql@16.9.0)
+      '@graphql-tools/utils': 10.6.0(graphql@16.9.0)
       graphql: 16.9.0
       tslib: 2.8.1
       value-or-promise: 1.0.12
@@ -3019,10 +3019,10 @@ snapshots:
       '@graphql-tools/merge': 8.4.2(graphql@16.9.0)
       '@graphql-tools/utils': 9.2.1(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.7.0
+      tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/utils@10.5.6(graphql@16.9.0)':
+  '@graphql-tools/utils@10.6.0(graphql@16.9.0)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       cross-inspect: 1.0.1
@@ -3034,7 +3034,7 @@ snapshots:
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
       graphql: 16.9.0
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@graphql-typed-document-node/core@3.2.0(graphql@16.9.0)':
     dependencies:
@@ -3042,14 +3042,14 @@ snapshots:
 
   '@graphql-yoga/logger@0.0.1':
     dependencies:
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@graphql-yoga/subscription@3.1.0':
     dependencies:
       '@graphql-yoga/typed-event-target': 1.0.0
       '@repeaterjs/repeater': 3.0.6
       '@whatwg-node/events': 0.0.2
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@graphql-yoga/subscription@5.0.1':
     dependencies:
@@ -3061,7 +3061,7 @@ snapshots:
   '@graphql-yoga/typed-event-target@1.0.0':
     dependencies:
       '@repeaterjs/repeater': 3.0.6
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@graphql-yoga/typed-event-target@3.0.0':
     dependencies:
@@ -3749,18 +3749,18 @@ snapshots:
     dependencies:
       asn1js: 3.0.5
       pvtsutils: 1.3.5
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@peculiar/json-schema@1.1.12':
     dependencies:
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@peculiar/webcrypto@1.5.0':
     dependencies:
       '@peculiar/asn1-schema': 2.3.13
       '@peculiar/json-schema': 1.1.12
       pvtsutils: 1.3.5
-      tslib: 2.7.0
+      tslib: 2.8.1
       webcrypto-core: 1.8.0
 
   '@phc/format@1.0.0': {}
@@ -3945,12 +3945,12 @@ snapshots:
       busboy: 1.6.0
       fast-querystring: 1.1.2
       fast-url-parser: 1.1.3
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   '@whatwg-node/server@0.7.7':
     dependencies:
       '@whatwg-node/fetch': 0.8.8
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   abort-controller@3.0.0:
     dependencies:
@@ -3996,7 +3996,7 @@ snapshots:
     dependencies:
       pvtsutils: 1.3.5
       pvutils: 1.1.3
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   atomic-sleep@1.0.0: {}
 
@@ -4406,9 +4406,9 @@ snapshots:
       graphql: 16.9.0
       lodash.get: 4.4.2
 
-  graphql-rate-limit-directive@2.0.5(@graphql-tools/utils@10.5.6(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@4.0.1):
+  graphql-rate-limit-directive@2.0.5(@graphql-tools/utils@10.6.0(graphql@16.9.0))(graphql@16.9.0)(rate-limiter-flexible@4.0.1):
     dependencies:
-      '@graphql-tools/utils': 10.5.6(graphql@16.9.0)
+      '@graphql-tools/utils': 10.6.0(graphql@16.9.0)
       graphql: 16.9.0
       rate-limiter-flexible: 4.0.1
 
@@ -4431,7 +4431,7 @@ snapshots:
       dset: 3.1.4
       graphql: 16.9.0
       lru-cache: 7.18.3
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   graphql@16.9.0: {}
 
@@ -4806,7 +4806,7 @@ snapshots:
 
   pvtsutils@1.3.5:
     dependencies:
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   pvutils@1.1.3: {}
 
@@ -5078,7 +5078,7 @@ snapshots:
       '@peculiar/json-schema': 1.1.12
       asn1js: 3.0.5
       pvtsutils: 1.3.5
-      tslib: 2.7.0
+      tslib: 2.8.1
 
   webidl-conversions@3.0.1: {}
 
