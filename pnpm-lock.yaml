@@ -40,13 +40,13 @@ importers:
         version: 16.4.5
       drizzle-orm:
         specifier: ^0.36.0
-        version: 0.36.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.37)(pg@8.13.1)(postgres@3.4.5)
+        version: 0.36.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.38)(pg@8.13.1)(postgres@3.4.5)
       elysia:
         specifier: ^1.0.16
         version: 1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       elysia-auth-drizzle:
         specifier: ^1.1.16
-        version: 1.2.55(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.37)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
+        version: 1.2.56(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.38)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
       elysia-helmet:
         specifier: ^2.0.0
         version: 2.0.0(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -113,7 +113,7 @@ importers:
         version: 9.0.7
       bun-types:
         specifier: latest
-        version: 1.1.37
+        version: 1.1.38
       drizzle-kit:
         specifier: ^0.28.0
         version: 0.28.1
@@ -1510,8 +1510,8 @@ packages:
   buffer@6.0.3:
     resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
 
-  bun-types@1.1.37:
-    resolution: {integrity: sha512-C65lv6eBr3LPJWFZ2gswyrGZ82ljnH8flVE03xeXxKhi2ZGtFiO4isRKTKnitbSqtRAcaqYSR6djt1whI66AbA==}
+  bun-types@1.1.38:
+    resolution: {integrity: sha512-iglB2t9z1Hc6DIuwwscwWj/csx22QlCZ96QbcqQfiy1wmuZ38srQLI/fDVkFHAo2+KL7aJZGVWF+nAWrR6Njig==}
 
   bundle-require@5.0.0:
     resolution: {integrity: sha512-GuziW3fSSmopcx4KRymQEJVbZUfqlCqcq7dvs6TYwKRZiegK/2buMxQTPs6MGlNv50wms1699qYO54R8XfRX4w==}
@@ -1726,8 +1726,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  elysia-auth-drizzle@1.2.55:
-    resolution: {integrity: sha512-hNgLFP0bmMCKkalEQK78behNjNtcAcjzqpqJ8HvxglNiq3/XcBSSwfUaxvpD3GAP+HR8SHCEFEsd6sSkGVblXg==}
+  elysia-auth-drizzle@1.2.56:
+    resolution: {integrity: sha512-MIRM7BXGl3MPzK8CzkdfAQaUx9XQb8fbKnvstR8Xn75k1b07q/bkQImSMcGR3AWwx2hO0qxUW0hnx3mSf1eosg==}
     peerDependencies:
       elysia: ^1.1.22
 
@@ -4023,7 +4023,7 @@ snapshots:
       base64-js: 1.5.1
       ieee754: 1.2.1
 
-  bun-types@1.1.37:
+  bun-types@1.1.38:
     dependencies:
       '@types/node': 20.12.14
       '@types/ws': 8.5.12
@@ -4122,12 +4122,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.36.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.37)(pg@8.13.1)(postgres@3.4.5):
+  drizzle-orm@0.36.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.38)(pg@8.13.1)(postgres@3.4.5):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
       '@opentelemetry/api': 1.9.0
       '@types/pg': 8.6.1
-      bun-types: 1.1.37
+      bun-types: 1.1.38
       pg: 8.13.1
       postgres: 3.4.5
 
@@ -4139,11 +4139,11 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  elysia-auth-drizzle@1.2.55(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.37)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
+  elysia-auth-drizzle@1.2.56(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.38)(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.4(elysia@1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       drizzle-kit: 0.28.1
-      drizzle-orm: 0.36.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.37)(pg@8.13.1)(postgres@3.4.5)
+      drizzle-orm: 0.36.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.38)(pg@8.13.1)(postgres@3.4.5)
       elysia: 1.1.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.56
