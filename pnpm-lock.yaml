@@ -46,7 +46,7 @@ importers:
         version: 1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       elysia-auth-drizzle:
         specifier: ^1.1.16
-        version: 1.2.60(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
+        version: 1.2.62(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5)
       elysia-helmet:
         specifier: ^2.0.0
         version: 2.0.0(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -196,8 +196,8 @@ packages:
     peerDependencies:
       elysia: '>= 1.1.0'
 
-  '@bogeychan/elysia-logger@0.1.4':
-    resolution: {integrity: sha512-8UsoBaHoRfRGyEnKhR/BSURYwfmx1gQb1/r2WBPfS5ROJMg+Bhl94IuzFNQ/++mq5bT6zJrAMVyfGjyEqiiQmQ==}
+  '@bogeychan/elysia-logger@0.1.6':
+    resolution: {integrity: sha512-G45oXBQipg5+rQhoiyAbo4sZ82thTWx0iMG27iEDrFnd2CqTrZo7vC2NAmTVPGyvKwRuwztB9ZgRZxn5VAraoA==}
     peerDependencies:
       elysia: '>= 1.1.0'
 
@@ -1661,98 +1661,6 @@ packages:
     resolution: {integrity: sha512-HmA/NeewvHywhJ2ENXD3KvOuM/+K2dGLJfxVfIHsGwaqKICJnS+Ke2L6UcSrSrtMJLJaT0Im1Qv4TFXfaZShyw==}
     hasBin: true
 
-  drizzle-orm@0.37.0:
-    resolution: {integrity: sha512-AsCNACQ/T2CyZUkrBRUqFT2ibHJ9ZHz3+lzYJFFn3hnj7ylIeItMz5kacRG89uSE74nXYShqehr6u+6ks4JR1A==}
-    peerDependencies:
-      '@aws-sdk/client-rds-data': '>=3'
-      '@cloudflare/workers-types': '>=4'
-      '@electric-sql/pglite': '>=0.2.0'
-      '@libsql/client': '>=0.10.0'
-      '@libsql/client-wasm': '>=0.10.0'
-      '@neondatabase/serverless': '>=0.10.0'
-      '@op-engineering/op-sqlite': '>=2'
-      '@opentelemetry/api': ^1.4.1
-      '@planetscale/database': '>=1'
-      '@prisma/client': '*'
-      '@tidbcloud/serverless': '*'
-      '@types/better-sqlite3': '*'
-      '@types/pg': '*'
-      '@types/react': '>=18'
-      '@types/sql.js': '*'
-      '@vercel/postgres': '>=0.8.0'
-      '@xata.io/client': '*'
-      better-sqlite3: '>=7'
-      bun-types: '*'
-      expo-sqlite: '>=14.0.0'
-      knex: '*'
-      kysely: '*'
-      mysql2: '>=2'
-      pg: '>=8'
-      postgres: '>=3'
-      prisma: '*'
-      react: '>=18'
-      sql.js: '>=1'
-      sqlite3: '>=5'
-    peerDependenciesMeta:
-      '@aws-sdk/client-rds-data':
-        optional: true
-      '@cloudflare/workers-types':
-        optional: true
-      '@electric-sql/pglite':
-        optional: true
-      '@libsql/client':
-        optional: true
-      '@libsql/client-wasm':
-        optional: true
-      '@neondatabase/serverless':
-        optional: true
-      '@op-engineering/op-sqlite':
-        optional: true
-      '@opentelemetry/api':
-        optional: true
-      '@planetscale/database':
-        optional: true
-      '@prisma/client':
-        optional: true
-      '@tidbcloud/serverless':
-        optional: true
-      '@types/better-sqlite3':
-        optional: true
-      '@types/pg':
-        optional: true
-      '@types/react':
-        optional: true
-      '@types/sql.js':
-        optional: true
-      '@vercel/postgres':
-        optional: true
-      '@xata.io/client':
-        optional: true
-      better-sqlite3:
-        optional: true
-      bun-types:
-        optional: true
-      expo-sqlite:
-        optional: true
-      knex:
-        optional: true
-      kysely:
-        optional: true
-      mysql2:
-        optional: true
-      pg:
-        optional: true
-      postgres:
-        optional: true
-      prisma:
-        optional: true
-      react:
-        optional: true
-      sql.js:
-        optional: true
-      sqlite3:
-        optional: true
-
   drizzle-orm@0.38.2:
     resolution: {integrity: sha512-eCE3yPRAskLo1WpM9OHpFaM70tBEDsWhwR/0M3CKyztAXKR9Qs3asZlcJOEliIcUSg8GuwrlY0dmYDgmm6y5GQ==}
     peerDependencies:
@@ -1855,8 +1763,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  elysia-auth-drizzle@1.2.60:
-    resolution: {integrity: sha512-Ex5iPesG+vfy5Q/f7w+yB2wkJeww+CcnrLJpf/CUkLe88VxHwY64ch+LPsqoT20riIIHYthtbebzOOpbskS+Sw==}
+  elysia-auth-drizzle@1.2.62:
+    resolution: {integrity: sha512-o/UbM20oC/RQhA7FrCm8urZtlRFI1qggRem0ujDu8VdKTU/gqxBuUiFkvk8AuJlB9hWd41jOhxCk/FHh8reNuQ==}
     peerDependencies:
       elysia: ^1.1.22
 
@@ -2834,7 +2742,7 @@ snapshots:
       elysia: 1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       pino: 9.5.0
 
-  '@bogeychan/elysia-logger@0.1.4(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
+  '@bogeychan/elysia-logger@0.1.6(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
     dependencies:
       elysia: 1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       pino: 9.5.0
@@ -4299,15 +4207,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.37.0(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(pg@8.13.1)(postgres@3.4.5):
-    optionalDependencies:
-      '@libsql/client-wasm': 0.14.0
-      '@opentelemetry/api': 1.9.0
-      '@types/pg': 8.6.1
-      bun-types: 1.1.40
-      pg: 8.13.1
-      postgres: 3.4.5
-
   drizzle-orm@0.38.2(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(pg@8.13.1)(postgres@3.4.5):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
@@ -4325,11 +4224,11 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  elysia-auth-drizzle@1.2.60(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
+  elysia-auth-drizzle@1.2.62(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))(pg@8.13.1)(postgres@3.4.5):
     dependencies:
-      '@bogeychan/elysia-logger': 0.1.4(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+      '@bogeychan/elysia-logger': 0.1.6(elysia@1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       drizzle-kit: 0.30.1
-      drizzle-orm: 0.37.0(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(pg@8.13.1)(postgres@3.4.5)
+      drizzle-orm: 0.38.2(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.40)(pg@8.13.1)(postgres@3.4.5)
       elysia: 1.1.26(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.58
