@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@elysiajs/cors':
         specifier: ^1.0.2
-        version: 1.1.1(elysia@1.1.27(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+        version: 1.2.0(elysia@1.1.27(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       '@elysiajs/graphql-yoga':
         specifier: ^1.0.3
         version: 1.1.1(elysia@1.1.27(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -212,10 +212,10 @@ packages:
   '@drizzle-team/brocli@0.10.2':
     resolution: {integrity: sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==}
 
-  '@elysiajs/cors@1.1.1':
-    resolution: {integrity: sha512-Bl6JSURwbneaJqkq02bd0C/F8StkmU5zoPLpnSncy4DZSU8TDwWPXxmoHqozI3hf1piDaSQ+I21cmpjPlQ8uYQ==}
+  '@elysiajs/cors@1.2.0':
+    resolution: {integrity: sha512-qsJwDAg6WfdQRMfj6uSMcDPSpXvm/zQFeAX1uuJXhIgazH8itSfcDxcH9pMuXVRX1yQNi2pPwNQLJmAcw5mzvw==}
     peerDependencies:
-      elysia: '>= 1.1.0'
+      elysia: '>= 1.2.0'
 
   '@elysiajs/graphql-yoga@1.1.1':
     resolution: {integrity: sha512-BoG4NnUqasIeJyP03f5pbM0oIVJ61mIqe9lkEXo4laYjyG/AyeSGB1cN34xYmUWJZAWhcTtcuExxP5LAkenryA==}
@@ -2759,7 +2759,7 @@ snapshots:
 
   '@drizzle-team/brocli@0.10.2': {}
 
-  '@elysiajs/cors@1.1.1(elysia@1.1.27(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
+  '@elysiajs/cors@1.2.0(elysia@1.1.27(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
     dependencies:
       elysia: 1.1.27(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
 
