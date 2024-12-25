@@ -40,7 +40,7 @@ importers:
         version: 16.4.7
       drizzle-orm:
         specifier: ^0.38.0
-        version: 0.38.2(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.42)(pg@8.13.1)(postgres@3.4.5)
+        version: 0.38.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.42)(pg@8.13.1)(postgres@3.4.5)
       elysia:
         specifier: ^1.0.16
         version: 1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
@@ -1673,8 +1673,8 @@ packages:
     resolution: {integrity: sha512-HmA/NeewvHywhJ2ENXD3KvOuM/+K2dGLJfxVfIHsGwaqKICJnS+Ke2L6UcSrSrtMJLJaT0Im1Qv4TFXfaZShyw==}
     hasBin: true
 
-  drizzle-orm@0.38.2:
-    resolution: {integrity: sha512-eCE3yPRAskLo1WpM9OHpFaM70tBEDsWhwR/0M3CKyztAXKR9Qs3asZlcJOEliIcUSg8GuwrlY0dmYDgmm6y5GQ==}
+  drizzle-orm@0.38.3:
+    resolution: {integrity: sha512-w41Y+PquMpSff/QDRGdItG0/aWca+/J3Sda9PPGkTxBtjWQvgU1jxlFBXdjog5tYvTu58uvi3PwR1NuCx0KeZg==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -4234,7 +4234,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.38.2(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.42)(pg@8.13.1)(postgres@3.4.5):
+  drizzle-orm@0.38.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.42)(pg@8.13.1)(postgres@3.4.5):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
       '@opentelemetry/api': 1.9.0
@@ -4255,7 +4255,7 @@ snapshots:
     dependencies:
       '@bogeychan/elysia-logger': 0.1.6(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       drizzle-kit: 0.30.1
-      drizzle-orm: 0.38.2(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.42)(pg@8.13.1)(postgres@3.4.5)
+      drizzle-orm: 0.38.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.1.42)(pg@8.13.1)(postgres@3.4.5)
       elysia: 1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.59
