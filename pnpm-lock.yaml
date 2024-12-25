@@ -16,7 +16,7 @@ importers:
         version: 1.2.0(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       '@elysiajs/server-timing':
         specifier: ^1.0.2
-        version: 1.1.0(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+        version: 1.2.0(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       '@elysiajs/stream':
         specifier: ^1.0.2
         version: 1.1.0(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -222,10 +222,10 @@ packages:
     peerDependencies:
       elysia: '>= 1.2.0'
 
-  '@elysiajs/server-timing@1.1.0':
-    resolution: {integrity: sha512-pJ1zIqiiB15bRR/4ISnLaAPHzwd/62G3QU6ohcP2ZlJQFhn3RcNfoYj5ynwesVccF3QEvbT/I2E8Abw5cLiiZQ==}
+  '@elysiajs/server-timing@1.2.0':
+    resolution: {integrity: sha512-V8dTKCHycxXb7CejiyMN8yjhgOH+w3LM8iJj6cAHl1UVA6W96bGSAZbg5BvoFGE3huYhWuZ1M+cgXu20X+P6QQ==}
     peerDependencies:
-      elysia: '>= 1.1.0'
+      elysia: '>= 1.2.0'
 
   '@elysiajs/stream@1.1.0':
     resolution: {integrity: sha512-n95wLadSWTx+q1MR+sp9h3a5OdRcJX/LLXhF3PJskIbZ7dGINho74JFLrT/Ixkal9bgA612JHFgCh6MSLVD5sA==}
@@ -2785,7 +2785,7 @@ snapshots:
       graphql-mobius: 0.1.13(graphql-yoga@3.9.1(graphql@16.10.0))(graphql@16.10.0)
       graphql-yoga: 3.9.1(graphql@16.10.0)
 
-  '@elysiajs/server-timing@1.1.0(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
+  '@elysiajs/server-timing@1.2.0(elysia@1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
     dependencies:
       elysia: 1.2.5(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
 
