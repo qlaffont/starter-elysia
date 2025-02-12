@@ -88,7 +88,7 @@ importers:
         version: 1.1.20(elysia@1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       unify-errors:
         specifier: ^1.3.0
-        version: 1.3.65
+        version: 1.3.66
       zod:
         specifier: ^3.22.4
         version: 3.24.1
@@ -2607,8 +2607,8 @@ packages:
     peerDependencies:
       elysia: latest
 
-  unify-errors@1.3.65:
-    resolution: {integrity: sha512-nAjm8GWwW6xAAPeKK1ZvEmCHyKPWns0k7nkQT+63uk9jkD54Mc4arr6poYj3TUJLl/zSBStrjCdN+VzdVmn75g==}
+  unify-errors@1.3.66:
+    resolution: {integrity: sha512-XWfJclG8wXpdpGpMyiRoACEGbHClRQIbkh5uTqLJOEap4fqsZCMF7WsTYcc1KXJ0Tm2kSTaXp2cuSZ6AHksn4A==}
     engines: {node: '>=10'}
 
   urlpattern-polyfill@8.0.2:
@@ -4226,7 +4226,7 @@ snapshots:
       drizzle-orm: 0.39.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.2)(pg@8.13.2)(postgres@3.4.5)
       elysia: 1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
-      unify-errors: 1.3.65
+      unify-errors: 1.3.66
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -5119,15 +5119,15 @@ snapshots:
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       elysia: 1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
-      unify-errors: 1.3.65
+      unify-errors: 1.3.66
 
   unify-elysia@1.1.18(elysia@1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       elysia: 1.2.12(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
-      unify-errors: 1.3.65
+      unify-errors: 1.3.66
 
-  unify-errors@1.3.65: {}
+  unify-errors@1.3.66: {}
 
   urlpattern-polyfill@8.0.2: {}
 
