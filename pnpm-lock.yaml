@@ -28,7 +28,7 @@ importers:
         version: 9.5.0
       '@graphql-tools/schema':
         specifier: ^10.0.3
-        version: 10.0.18(graphql@16.10.0)
+        version: 10.0.19(graphql@16.10.0)
       '@t3-oss/env-core':
         specifier: ^0.11.0
         version: 0.11.1(zod@3.24.2)
@@ -58,7 +58,7 @@ importers:
         version: 1.0.25(elysia@1.2.15(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       graphql-rate-limit-directive:
         specifier: ^2.0.5
-        version: 2.0.6(@graphql-tools/utils@10.8.1(graphql@16.10.0))(graphql@16.10.0)(rate-limiter-flexible@4.0.1)
+        version: 2.0.6(@graphql-tools/utils@10.8.2(graphql@16.10.0))(graphql@16.10.0)(rate-limiter-flexible@4.0.1)
       jsonwebtoken:
         specifier: ^9.0.2
         version: 9.0.2
@@ -686,14 +686,14 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/merge@9.0.19':
-    resolution: {integrity: sha512-iJP3Xke+vgnST58A1Q/1+y3bzfbYalIMnegUNupYHNvHHSE0PXoq8YieqQF8JYzWVACMxiq/M4Y1vW75mS2UVg==}
+  '@graphql-tools/merge@9.0.20':
+    resolution: {integrity: sha512-bJ+rudkkhYaiWzRV3vCyu6CD6bJsrBV1e+L4MOor7p5wSBQBAs8IAW05IktQq1RH1KPvyZ62z77P0/VsapnSKA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/schema@10.0.18':
-    resolution: {integrity: sha512-6j2O/07v1zbGvASizMSO7YZdGt/9HfPDx8s9n75sD2xoGfeJ2aRSmI4LkyuvqOpi0ecaa9xErnMEEvUaKBqMbw==}
+  '@graphql-tools/schema@10.0.19':
+    resolution: {integrity: sha512-8osBrTWG9c0ya7sse2fpKlDqi0EAto8Qq9A/PlSZ5J5SY0EE1W9lUcTIVaHc79cOKdh++z4ZHoukzZXrxC8UIg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -703,8 +703,8 @@ packages:
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@graphql-tools/utils@10.8.1':
-    resolution: {integrity: sha512-fI5NNuqeEAHyp7NuCDjvxWR5PTUXM4AqY9BoC59ZcX4nePAJje27ZsFHbAMS6EKDosY1K/D4ADxsO0P5+FH07A==}
+  '@graphql-tools/utils@10.8.2':
+    resolution: {integrity: sha512-JjWpf9Dj2LXFccAB7CON6jUcXduJlE5XcJfLmKTWBk46Ei2dhDntVAmvIa97YPdLanrgFN5SRt3hSAe3qo/FYg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
@@ -3046,16 +3046,16 @@ snapshots:
       graphql: 16.10.0
       tslib: 2.8.1
 
-  '@graphql-tools/merge@9.0.19(graphql@16.10.0)':
+  '@graphql-tools/merge@9.0.20(graphql@16.10.0)':
     dependencies:
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
+      '@graphql-tools/utils': 10.8.2(graphql@16.10.0)
       graphql: 16.10.0
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.0.18(graphql@16.10.0)':
+  '@graphql-tools/schema@10.0.19(graphql@16.10.0)':
     dependencies:
-      '@graphql-tools/merge': 9.0.19(graphql@16.10.0)
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
+      '@graphql-tools/merge': 9.0.20(graphql@16.10.0)
+      '@graphql-tools/utils': 10.8.2(graphql@16.10.0)
       graphql: 16.10.0
       tslib: 2.8.1
 
@@ -3067,7 +3067,7 @@ snapshots:
       tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/utils@10.8.1(graphql@16.10.0)':
+  '@graphql-tools/utils@10.8.2(graphql@16.10.0)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
       cross-inspect: 1.0.1
@@ -4515,9 +4515,9 @@ snapshots:
       graphql: 16.10.0
       lodash.get: 4.4.2
 
-  graphql-rate-limit-directive@2.0.6(@graphql-tools/utils@10.8.1(graphql@16.10.0))(graphql@16.10.0)(rate-limiter-flexible@4.0.1):
+  graphql-rate-limit-directive@2.0.6(@graphql-tools/utils@10.8.2(graphql@16.10.0))(graphql@16.10.0)(rate-limiter-flexible@4.0.1):
     dependencies:
-      '@graphql-tools/utils': 10.8.1(graphql@16.10.0)
+      '@graphql-tools/utils': 10.8.2(graphql@16.10.0)
       graphql: 16.10.0
       rate-limiter-flexible: 4.0.1
 
