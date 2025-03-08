@@ -52,7 +52,7 @@ importers:
         version: 2.0.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       elysia-rate-limit:
         specifier: ^4.0.0
-        version: 4.2.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+        version: 4.2.1(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       graceful-server-elysia:
         specifier: ^1.0.4
         version: 1.0.25(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -1792,8 +1792,8 @@ packages:
     peerDependencies:
       elysia: '>= 1.0.0'
 
-  elysia-rate-limit@4.2.0:
-    resolution: {integrity: sha512-zJm0Sh9eWGKluzyVhOCTWTR9ztyGXi8QA2i4h+lWHphJLCH4EEsss6pDUL9cxYfQKixPGXEQxdGxQ0QXvySSMg==}
+  elysia-rate-limit@4.2.1:
+    resolution: {integrity: sha512-6HciNDW3Bjru8cxkd+jQd8nonaWXHlc7+neNrMz2V8T8FLyim0ExQHGLZXPrM8ZnltJSfaSt1PRpvFtbEiySJA==}
     peerDependencies:
       elysia: '>= 1.0.0'
 
@@ -4320,7 +4320,7 @@ snapshots:
     dependencies:
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
 
-  elysia-rate-limit@4.2.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
+  elysia-rate-limit@4.2.1(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
     dependencies:
       debug: 4.3.4
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
