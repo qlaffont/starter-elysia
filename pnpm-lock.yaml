@@ -98,7 +98,7 @@ importers:
         version: 1.9.4
       '@commitlint/config-conventional':
         specifier: ^19.1.0
-        version: 19.7.1
+        version: 19.8.0
       '@opentelemetry/auto-instrumentations-node':
         specifier: ^0.56.0
         version: 0.56.1(@opentelemetry/api@1.9.0)
@@ -196,12 +196,12 @@ packages:
     peerDependencies:
       elysia: '>= 1.2.10'
 
-  '@commitlint/config-conventional@19.7.1':
-    resolution: {integrity: sha512-fsEIF8zgiI/FIWSnykdQNj/0JE4av08MudLTyYHm4FlLWemKoQvPNUYU2M/3tktWcCEyq7aOkDDgtjrmgWFbvg==}
+  '@commitlint/config-conventional@19.8.0':
+    resolution: {integrity: sha512-9I2kKJwcAPwMoAj38hwqFXG0CzS2Kj+SAByPUQ0SlHTfb7VUhYVmo7G2w2tBrqmOf7PFd6MpZ/a1GQJo8na8kw==}
     engines: {node: '>=v18'}
 
-  '@commitlint/types@19.5.0':
-    resolution: {integrity: sha512-DSHae2obMSMkAtTBSOulg5X7/z+rGLxcXQIkg3OmWvY6wifojge5uVMydfhUvs7yQj+V7jNmRZ2Xzl8GJyqRgg==}
+  '@commitlint/types@19.8.0':
+    resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
 
   '@drizzle-team/brocli@0.10.2':
@@ -675,6 +675,7 @@ packages:
   '@faker-js/faker@9.5.1':
     resolution: {integrity: sha512-0fzMEDxkExR2cn731kpDaCCnBGBUOIXEi2S1N5l8Hltp6aPf4soTMJ+g4k8r2sI5oB+rpwIW8Uy/6jkwGpnWPg==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0'}
+    deprecated: Please update to a newer version
 
   '@graphql-tools/executor@0.0.18':
     resolution: {integrity: sha512-xZC0C+/npXoSHBB5bsJdwxDLgtl1Gu4fL9J2TPQmXoZC3L2N506KJoppf9LgWdHU/xK04luJrhP6WjhfkIN0pQ==}
@@ -1447,6 +1448,9 @@ packages:
 
   '@types/node@22.13.5':
     resolution: {integrity: sha512-+lTU0PxZXn0Dr1NBtC7Y8cR21AJr87dLLU953CWA6pMxxv/UDc7jYAY90upcrie1nRcD6XNG5HOYEDtgW5TxAg==}
+
+  '@types/node@22.13.9':
+    resolution: {integrity: sha512-acBjXdRJ3A6Pb3tqnw9HZmyR3Fiol3aGxRCK1x3d+6CDAMjl7I649wpSd+yNURCjbOUGu9tqtLKnTGxmK6CyGw==}
 
   '@types/node@22.7.3':
     resolution: {integrity: sha512-qXKfhXXqGTyBskvWEzJZPUxSslAiLaB6JGP1ic/XTH9ctGgzdgYguuLP1C601aRTSDNlLb0jbKqXjZ48GNraSA==}
@@ -2775,12 +2779,12 @@ snapshots:
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       pino: 9.6.0
 
-  '@commitlint/config-conventional@19.7.1':
+  '@commitlint/config-conventional@19.8.0':
     dependencies:
-      '@commitlint/types': 19.5.0
+      '@commitlint/types': 19.8.0
       conventional-changelog-conventionalcommits: 7.0.2
 
-  '@commitlint/types@19.5.0':
+  '@commitlint/types@19.8.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
       chalk: 5.4.1
@@ -4005,7 +4009,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
 
   '@types/estree@1.0.6': {}
 
@@ -4029,6 +4033,10 @@ snapshots:
       undici-types: 5.26.5
 
   '@types/node@22.13.5':
+    dependencies:
+      undici-types: 6.20.0
+
+  '@types/node@22.13.9':
     dependencies:
       undici-types: 6.20.0
 
@@ -4934,7 +4942,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.13.5
+      '@types/node': 22.13.9
       long: 5.3.0
 
   pump@3.0.2:
