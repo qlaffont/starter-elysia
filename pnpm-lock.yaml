@@ -85,7 +85,7 @@ importers:
         version: 1.1.32(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       unify-elysia-gql:
         specifier: ^1.1.0
-        version: 1.1.33(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+        version: 1.1.34(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       unify-errors:
         specifier: ^1.3.0
         version: 1.3.78
@@ -2814,8 +2814,8 @@ packages:
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
-  unify-elysia-gql@1.1.33:
-    resolution: {integrity: sha512-FictvzwRRxYspOyvBahSZtiBYHrfjviefOgBw5/bMic2lk7HkPZ16TUOcHhTm2Tn/IaD7O4iTfo5E/NOovvbDQ==}
+  unify-elysia-gql@1.1.34:
+    resolution: {integrity: sha512-XDEh8bmfqITf4ezMYbsOtjpXGL9w5T0VKYBnnmRIJzv3qC/yaPEtQjsKJDUCdG1SuuCe8C1M7e8pIGPmvLS6WQ==}
     peerDependencies:
       elysia: latest
 
@@ -5630,7 +5630,7 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  unify-elysia-gql@1.1.33(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
+  unify-elysia-gql@1.1.34(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
