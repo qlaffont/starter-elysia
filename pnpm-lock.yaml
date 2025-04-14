@@ -82,7 +82,7 @@ importers:
         version: 2.0.0-rc.2(graphql-scalars@1.23.0(graphql@16.10.0))(graphql@16.10.0)
       unify-elysia:
         specifier: ^1.1.0
-        version: 1.1.32(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+        version: 1.1.33(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       unify-elysia-gql:
         specifier: ^1.1.0
         version: 1.1.34(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -2820,8 +2820,8 @@ packages:
     peerDependencies:
       elysia: latest
 
-  unify-elysia@1.1.32:
-    resolution: {integrity: sha512-G1QYRVx4vX8bYlgyJq5QxFBuu1OUr4CiAgPJ3qJxHehqA4b0t9eJnBf5468mElTbWBcj1Lx2KHEBHvumKh9NoQ==}
+  unify-elysia@1.1.33:
+    resolution: {integrity: sha512-2bemNgFq6WiPAKqVLfafFwGzzlMvvHkh1QUEWU62G5EG1MLdsT1QgL+7bKfKAMSZYQbplFsVchCL9OcW02+FWw==}
     peerDependencies:
       elysia: latest
 
@@ -5637,7 +5637,7 @@ snapshots:
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       unify-errors: 1.3.79
 
-  unify-elysia@1.1.32(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
+  unify-elysia@1.1.33(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
