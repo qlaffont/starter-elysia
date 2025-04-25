@@ -40,7 +40,7 @@ importers:
         version: 16.5.0
       drizzle-orm:
         specifier: ^0.43.0
-        version: 0.43.0(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.10)(gel@2.0.1)(pg@8.15.5)(postgres@3.4.5)
+        version: 0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.10)(gel@2.0.1)(pg@8.15.5)(postgres@3.4.5)
       elysia:
         specifier: ^1.0.16
         version: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
@@ -1870,8 +1870,8 @@ packages:
     resolution: {integrity: sha512-pcKVT+GbfPA+bUovPIilgVOoq+onNBo/YQBG86sf3/GFHkN6lRJPm1l7dKN0IMAk57RQoIm4GUllRrasLlcaSg==}
     hasBin: true
 
-  drizzle-orm@0.43.0:
-    resolution: {integrity: sha512-OF6ZOtpGJs3CNXHGwKLfP+mYXEzTnXNL/WRXgAGR+SrtPl6quIBbTPEQZNQ6HhVQchMmJeaezBIcpFBpJD3x+g==}
+  drizzle-orm@0.43.1:
+    resolution: {integrity: sha512-dUcDaZtE/zN4RV/xqGrVSMpnEczxd5cIaoDeor7Zst9wOe/HzC/7eAaulywWGYXdDEc9oBPMjayVEDg0ziTLJA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -4703,7 +4703,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.43.0(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.10)(gel@2.0.1)(pg@8.15.5)(postgres@3.4.5):
+  drizzle-orm@0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.10)(gel@2.0.1)(pg@8.15.5)(postgres@3.4.5):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
       '@opentelemetry/api': 1.9.0
@@ -4725,7 +4725,7 @@ snapshots:
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       drizzle-kit: 0.31.0
-      drizzle-orm: 0.43.0(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.10)(gel@2.0.1)(pg@8.15.5)(postgres@3.4.5)
+      drizzle-orm: 0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.10)(gel@2.0.1)(pg@8.15.5)(postgres@3.4.5)
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.81
