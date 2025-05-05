@@ -13,7 +13,7 @@ importers:
         version: 1.3.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       '@elysiajs/graphql-yoga':
         specifier: ^1.0.3
-        version: 1.2.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
+        version: 1.3.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       '@elysiajs/server-timing':
         specifier: ^1.0.2
         version: 1.2.1(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -28,7 +28,7 @@ importers:
         version: 9.7.0
       '@graphql-tools/schema':
         specifier: ^10.0.3
-        version: 10.0.23(graphql@16.10.0)
+        version: 10.0.23(graphql@16.11.0)
       '@t3-oss/env-core':
         specifier: ^0.11.0
         version: 0.11.1(zod@3.24.4)
@@ -58,7 +58,7 @@ importers:
         version: 1.0.25(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
       graphql-rate-limit-directive:
         specifier: ^2.0.5
-        version: 2.0.6(@graphql-tools/utils@10.8.6(graphql@16.10.0))(graphql@16.10.0)(rate-limiter-flexible@4.0.1)
+        version: 2.0.6(@graphql-tools/utils@10.8.6(graphql@16.11.0))(graphql@16.11.0)(rate-limiter-flexible@4.0.1)
       jsonwebtoken:
         specifier: ^9.0.2
         version: 9.0.2
@@ -79,7 +79,7 @@ importers:
         version: 7.0.0
       type-graphql:
         specifier: 2.0.0-rc.2
-        version: 2.0.0-rc.2(graphql-scalars@1.23.0(graphql@16.10.0))(graphql@16.10.0)
+        version: 2.0.0-rc.2(graphql-scalars@1.23.0(graphql@16.11.0))(graphql@16.11.0)
       unify-elysia:
         specifier: ^1.1.0
         version: 1.1.35(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))
@@ -216,10 +216,10 @@ packages:
     peerDependencies:
       elysia: '>= 1.3.0'
 
-  '@elysiajs/graphql-yoga@1.2.0':
-    resolution: {integrity: sha512-wWpmjTqvtwbJtIOCmAM/o/6W3joxVH2gd7e0/Fu2Px5pwmbFuNQ4NmhZPTEEd3q9SOJhV9+zT0x81zZA4pcSmw==}
+  '@elysiajs/graphql-yoga@1.3.0':
+    resolution: {integrity: sha512-6yWfZGmrg5rB5uNsrhK76O8Q6QCPhYTgte631JqoNKpwQIKvC1wsabDAR+rAkn4x0UUiTqfBITdHnUXOkuZqVg==}
     peerDependencies:
-      elysia: '>= 1.2.0'
+      elysia: '>= 1.3.0'
 
   '@elysiajs/server-timing@1.2.1':
     resolution: {integrity: sha512-7i4xOSYRdgljxKg8fyyBPVtnwsjhvJBnJn4qpTiNXt6ElrW1V2FeV2rdhyw2AQagUknnfpbUXMeDLalPaDeaLQ==}
@@ -1733,8 +1733,8 @@ packages:
   array-ify@1.0.0:
     resolution: {integrity: sha512-c5AMf34bKdvPhQ7tBGhqkgKNUzMr4WUs+WDtC2ZUGOUncbxKMTvqxYctiseW3+L4bA8ec+GcZ6/A/FW4m8ukng==}
 
-  asn1js@3.0.5:
-    resolution: {integrity: sha512-FVnvrKJwpt9LP2lAMl8qZswRNm3T4q9CON+bxldk2iwk3FFpuwhx2FfinyitizWHsVYyaY+y5JzDR0rCMV5yTQ==}
+  asn1js@3.0.6:
+    resolution: {integrity: sha512-UOCGPYbl0tv8+006qks/dTgV9ajs97X2p0FAbyS2iyCRrmLSRolDaHdp+v/CLgnzHc3fVB+CwYiUmei7ndFcgA==}
     engines: {node: '>=12.0.0'}
 
   atomic-sleep@1.0.0:
@@ -2175,8 +2175,8 @@ packages:
     peerDependencies:
       graphql: ^15.2.0 || ^16.0.0
 
-  graphql@16.10.0:
-    resolution: {integrity: sha512-AjqGKbDGUFRKIRCP9tCKiIGHyriz2oHEbPIbEtcSLSs4YjReZOIPQQWek4+6hjw62H9QShXHyaGivGiYVLeYFQ==}
+  graphql@16.11.0:
+    resolution: {integrity: sha512-mS1lbMsxgQj6hge1XZ6p7GPhbrtFwUFYi3wRzXAC/FmYnyXMTvvI3td3rjmQ2u8ewXueaSvRPWaEcgVVOT9Jnw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   hash-it@6.0.0:
@@ -3003,12 +3003,12 @@ snapshots:
     dependencies:
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
 
-  '@elysiajs/graphql-yoga@1.2.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
+  '@elysiajs/graphql-yoga@1.3.0(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
     dependencies:
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
-      graphql: 16.10.0
-      graphql-mobius: 0.1.13(graphql-yoga@3.9.1(graphql@16.10.0))(graphql@16.10.0)
-      graphql-yoga: 3.9.1(graphql@16.10.0)
+      graphql: 16.11.0
+      graphql-mobius: 0.1.13(graphql-yoga@3.9.1(graphql@16.11.0))(graphql@16.11.0)
+      graphql-yoga: 3.9.1(graphql@16.11.0)
 
   '@elysiajs/server-timing@1.2.1(elysia@1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3))':
     dependencies:
@@ -3036,10 +3036,10 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@envelop/validation-cache@5.1.3(@envelop/core@3.0.6)(graphql@16.10.0)':
+  '@envelop/validation-cache@5.1.3(@envelop/core@3.0.6)(graphql@16.11.0)':
     dependencies:
       '@envelop/core': 3.0.6
-      graphql: 16.10.0
+      graphql: 16.11.0
       hash-it: 6.0.0
       lru-cache: 6.0.0
       tslib: 2.8.1
@@ -3272,60 +3272,60 @@ snapshots:
 
   '@faker-js/faker@9.7.0': {}
 
-  '@graphql-tools/executor@0.0.18(graphql@16.10.0)':
+  '@graphql-tools/executor@0.0.18(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/utils': 9.2.1(graphql@16.10.0)
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
+      '@graphql-tools/utils': 9.2.1(graphql@16.11.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
       '@repeaterjs/repeater': 3.0.4
-      graphql: 16.10.0
+      graphql: 16.11.0
       tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/merge@8.4.2(graphql@16.10.0)':
+  '@graphql-tools/merge@8.4.2(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/utils': 9.2.1(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/utils': 9.2.1(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-tools/merge@9.0.24(graphql@16.10.0)':
+  '@graphql-tools/merge@9.0.24(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/utils': 10.8.6(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.0.23(graphql@16.10.0)':
+  '@graphql-tools/schema@10.0.23(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/merge': 9.0.24(graphql@16.10.0)
-      '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/merge': 9.0.24(graphql@16.11.0)
+      '@graphql-tools/utils': 10.8.6(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-tools/schema@9.0.19(graphql@16.10.0)':
+  '@graphql-tools/schema@9.0.19(graphql@16.11.0)':
     dependencies:
-      '@graphql-tools/merge': 8.4.2(graphql@16.10.0)
-      '@graphql-tools/utils': 9.2.1(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/merge': 8.4.2(graphql@16.11.0)
+      '@graphql-tools/utils': 9.2.1(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
       value-or-promise: 1.0.12
 
-  '@graphql-tools/utils@10.8.6(graphql@16.10.0)':
+  '@graphql-tools/utils@10.8.6(graphql@16.11.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
       '@whatwg-node/promise-helpers': 1.2.4
       cross-inspect: 1.0.1
       dset: 3.1.4
-      graphql: 16.10.0
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-tools/utils@9.2.1(graphql@16.10.0)':
+  '@graphql-tools/utils@9.2.1(graphql@16.11.0)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@16.10.0)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.11.0)':
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.11.0
 
   '@graphql-yoga/logger@0.0.1':
     dependencies:
@@ -4325,7 +4325,7 @@ snapshots:
 
   '@peculiar/asn1-schema@2.3.15':
     dependencies:
-      asn1js: 3.0.5
+      asn1js: 3.0.6
       pvtsutils: 1.3.6
       tslib: 2.8.1
 
@@ -4602,7 +4602,7 @@ snapshots:
 
   array-ify@1.0.0: {}
 
-  asn1js@3.0.5:
+  asn1js@3.0.6:
     dependencies:
       pvtsutils: 1.3.6
       pvutils: 1.1.3
@@ -5015,44 +5015,44 @@ snapshots:
     dependencies:
       elysia: 1.2.25(@sinclair/typebox@0.33.12)(openapi-types@12.1.3)
 
-  graphql-mobius@0.1.13(graphql-yoga@3.9.1(graphql@16.10.0))(graphql@16.10.0):
+  graphql-mobius@0.1.13(graphql-yoga@3.9.1(graphql@16.11.0))(graphql@16.11.0):
     optionalDependencies:
-      graphql: 16.10.0
-      graphql-yoga: 3.9.1(graphql@16.10.0)
+      graphql: 16.11.0
+      graphql-yoga: 3.9.1(graphql@16.11.0)
 
-  graphql-query-complexity@0.12.0(graphql@16.10.0):
+  graphql-query-complexity@0.12.0(graphql@16.11.0):
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.11.0
       lodash.get: 4.4.2
 
-  graphql-rate-limit-directive@2.0.6(@graphql-tools/utils@10.8.6(graphql@16.10.0))(graphql@16.10.0)(rate-limiter-flexible@4.0.1):
+  graphql-rate-limit-directive@2.0.6(@graphql-tools/utils@10.8.6(graphql@16.11.0))(graphql@16.11.0)(rate-limiter-flexible@4.0.1):
     dependencies:
-      '@graphql-tools/utils': 10.8.6(graphql@16.10.0)
-      graphql: 16.10.0
+      '@graphql-tools/utils': 10.8.6(graphql@16.11.0)
+      graphql: 16.11.0
       rate-limiter-flexible: 4.0.1
 
-  graphql-scalars@1.23.0(graphql@16.10.0):
+  graphql-scalars@1.23.0(graphql@16.11.0):
     dependencies:
-      graphql: 16.10.0
+      graphql: 16.11.0
       tslib: 2.8.1
 
-  graphql-yoga@3.9.1(graphql@16.10.0):
+  graphql-yoga@3.9.1(graphql@16.11.0):
     dependencies:
       '@envelop/core': 3.0.6
-      '@envelop/validation-cache': 5.1.3(@envelop/core@3.0.6)(graphql@16.10.0)
-      '@graphql-tools/executor': 0.0.18(graphql@16.10.0)
-      '@graphql-tools/schema': 9.0.19(graphql@16.10.0)
-      '@graphql-tools/utils': 9.2.1(graphql@16.10.0)
+      '@envelop/validation-cache': 5.1.3(@envelop/core@3.0.6)(graphql@16.11.0)
+      '@graphql-tools/executor': 0.0.18(graphql@16.11.0)
+      '@graphql-tools/schema': 9.0.19(graphql@16.11.0)
+      '@graphql-tools/utils': 9.2.1(graphql@16.11.0)
       '@graphql-yoga/logger': 0.0.1
       '@graphql-yoga/subscription': 3.1.0
       '@whatwg-node/fetch': 0.8.8
       '@whatwg-node/server': 0.7.7
       dset: 3.1.4
-      graphql: 16.10.0
+      graphql: 16.11.0
       lru-cache: 7.18.3
       tslib: 2.8.1
 
-  graphql@16.10.0: {}
+  graphql@16.11.0: {}
 
   hash-it@6.0.0: {}
 
@@ -5682,14 +5682,14 @@ snapshots:
       - tsx
       - yaml
 
-  type-graphql@2.0.0-rc.2(graphql-scalars@1.23.0(graphql@16.10.0))(graphql@16.10.0):
+  type-graphql@2.0.0-rc.2(graphql-scalars@1.23.0(graphql@16.11.0))(graphql@16.11.0):
     dependencies:
       '@graphql-yoga/subscription': 5.0.1
       '@types/node': 22.7.3
       '@types/semver': 7.5.8
-      graphql: 16.10.0
-      graphql-query-complexity: 0.12.0(graphql@16.10.0)
-      graphql-scalars: 1.23.0(graphql@16.10.0)
+      graphql: 16.11.0
+      graphql-query-complexity: 0.12.0(graphql@16.11.0)
+      graphql-scalars: 1.23.0(graphql@16.11.0)
       semver: 7.6.3
       tslib: 2.7.0
 
@@ -5727,7 +5727,7 @@ snapshots:
     dependencies:
       '@peculiar/asn1-schema': 2.3.15
       '@peculiar/json-schema': 1.1.12
-      asn1js: 3.0.5
+      asn1js: 3.0.6
       pvtsutils: 1.3.6
       tslib: 2.8.1
 
