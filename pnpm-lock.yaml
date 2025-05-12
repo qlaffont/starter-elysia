@@ -40,13 +40,13 @@ importers:
         version: 16.5.0
       drizzle-orm:
         specifier: ^0.43.0
-        version: 0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(gel@2.0.1)(pg@8.15.6)(postgres@3.4.5)
+        version: 0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(gel@2.0.1)(pg@8.16.0)(postgres@3.4.5)
       elysia:
         specifier: ^1.0.16
         version: 1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)
       elysia-auth-drizzle:
         specifier: ^1.1.16
-        version: 1.3.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(elysia@1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))(gel@2.0.1)(pg@8.15.6)(postgres@3.4.5)
+        version: 1.3.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(elysia@1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))(gel@2.0.1)(pg@8.16.0)(postgres@3.4.5)
       elysia-helmet:
         specifier: ^2.0.0
         version: 2.0.0(elysia@1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
@@ -125,7 +125,7 @@ importers:
         version: 15.5.2
       pg:
         specifier: ^8.11.5
-        version: 8.15.6
+        version: 8.16.0
       pino-pretty:
         specifier: ^13.0.0
         version: 13.0.0
@@ -2485,27 +2485,27 @@ packages:
   pg-cloudflare@1.2.5:
     resolution: {integrity: sha512-OOX22Vt0vOSRrdoUPKJ8Wi2OpE/o/h9T8X1s4qSkCedbNah9ei2W2765be8iMVxQUsvgT7zIAT2eIa9fs5+vtg==}
 
-  pg-connection-string@2.8.5:
-    resolution: {integrity: sha512-Ni8FuZ8yAF+sWZzojvtLE2b03cqjO5jNULcHFfM9ZZ0/JXrgom5pBREbtnAw7oxsxJqHw9Nz/XWORUEL3/IFow==}
+  pg-connection-string@2.9.0:
+    resolution: {integrity: sha512-P2DEBKuvh5RClafLngkAuGe9OUlFV7ebu8w1kmaaOgPcpJd1RIFh7otETfI6hAR8YupOLFTY7nuvvIn7PLciUQ==}
 
   pg-int8@1.0.1:
     resolution: {integrity: sha512-WCtabS6t3c8SkpDBUlb1kjOs7l66xsGdKpIPZsg4wR+B3+u9UAum2odSsF9tnvxg80h4ZxLWMy4pRjOsFIqQpw==}
     engines: {node: '>=4.0.0'}
 
-  pg-pool@3.9.6:
-    resolution: {integrity: sha512-rFen0G7adh1YmgvrmE5IPIqbb+IgEzENUm+tzm6MLLDSlPRoZVhzU1WdML9PV2W5GOdRA9qBKURlbt1OsXOsPw==}
+  pg-pool@3.10.0:
+    resolution: {integrity: sha512-DzZ26On4sQ0KmqnO34muPcmKbhrjmyiO4lCCR0VwEd7MjmiKf5NTg/6+apUEu0NF7ESa37CGzFxH513CoUmWnA==}
     peerDependencies:
       pg: '>=8.0'
 
-  pg-protocol@1.9.5:
-    resolution: {integrity: sha512-DYTWtWpfd5FOro3UnAfwvhD8jh59r2ig8bPtc9H8Ds7MscE/9NYruUQWFAOuraRl29jwcT2kyMFQ3MxeaVjUhg==}
+  pg-protocol@1.10.0:
+    resolution: {integrity: sha512-IpdytjudNuLv8nhlHs/UrVBhU0e78J0oIS/0AVdTbWxSOkFUVdsHC/NrorO6nXsQNDTT1kzDSOMJubBQviX18Q==}
 
   pg-types@2.2.0:
     resolution: {integrity: sha512-qTAAlrEsl8s4OiEQY69wDvcMIdQN6wdz5ojQiOy6YRMuynxenON0O5oCpJI6lshc6scgAY8qvJ2On/p+CXY0GA==}
     engines: {node: '>=4'}
 
-  pg@8.15.6:
-    resolution: {integrity: sha512-yvao7YI3GdmmrslNVsZgx9PfntfWrnXwtR+K/DjI0I/sTKif4Z623um+sjVZ1hk5670B+ODjvHDAckKdjmPTsg==}
+  pg@8.16.0:
+    resolution: {integrity: sha512-7SKfdvP8CTNXjMUzfcVTaI+TDzBEeaUnVwiVGZQD1Hh33Kpev7liQba9uLd4CfN8r9mCVsD0JIpq03+Unpz+kg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
       pg-native: '>=3.0.1'
@@ -2686,6 +2686,11 @@ packages:
 
   semver@7.7.1:
     resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4575,7 +4580,7 @@ snapshots:
   '@types/pg@8.6.1':
     dependencies:
       '@types/node': 22.15.3
-      pg-protocol: 1.9.5
+      pg-protocol: 1.10.0
       pg-types: 2.2.0
 
   '@types/semver@7.5.8': {}
@@ -4784,14 +4789,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(gel@2.0.1)(pg@8.15.6)(postgres@3.4.5):
+  drizzle-orm@0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(gel@2.0.1)(pg@8.16.0)(postgres@3.4.5):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
       '@opentelemetry/api': 1.9.0
       '@types/pg': 8.6.1
       bun-types: 1.2.13
       gel: 2.0.1
-      pg: 8.15.6
+      pg: 8.16.0
       postgres: 3.4.5
 
   dset@3.1.4: {}
@@ -4802,11 +4807,11 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  elysia-auth-drizzle@1.3.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(elysia@1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))(gel@2.0.1)(pg@8.15.6)(postgres@3.4.5):
+  elysia-auth-drizzle@1.3.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(elysia@1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))(gel@2.0.1)(pg@8.16.0)(postgres@3.4.5):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
       drizzle-kit: 0.31.1
-      drizzle-orm: 0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(gel@2.0.1)(pg@8.15.6)(postgres@3.4.5)
+      drizzle-orm: 0.43.1(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.6.1)(bun-types@1.2.13)(gel@2.0.1)(pg@8.16.0)(postgres@3.4.5)
       elysia: 1.3.1(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.82
@@ -5061,7 +5066,7 @@ snapshots:
       '@petamoriken/float16': 3.9.2
       debug: 4.4.0
       env-paths: 3.0.0
-      semver: 7.7.1
+      semver: 7.7.2
       shell-quote: 1.8.2
       which: 4.0.0
     transitivePeerDependencies:
@@ -5390,15 +5395,15 @@ snapshots:
   pg-cloudflare@1.2.5:
     optional: true
 
-  pg-connection-string@2.8.5: {}
+  pg-connection-string@2.9.0: {}
 
   pg-int8@1.0.1: {}
 
-  pg-pool@3.9.6(pg@8.15.6):
+  pg-pool@3.10.0(pg@8.16.0):
     dependencies:
-      pg: 8.15.6
+      pg: 8.16.0
 
-  pg-protocol@1.9.5: {}
+  pg-protocol@1.10.0: {}
 
   pg-types@2.2.0:
     dependencies:
@@ -5408,11 +5413,11 @@ snapshots:
       postgres-date: 1.0.7
       postgres-interval: 1.2.0
 
-  pg@8.15.6:
+  pg@8.16.0:
     dependencies:
-      pg-connection-string: 2.8.5
-      pg-pool: 3.9.6(pg@8.15.6)
-      pg-protocol: 1.9.5
+      pg-connection-string: 2.9.0
+      pg-pool: 3.10.0(pg@8.16.0)
+      pg-protocol: 1.10.0
       pg-types: 2.2.0
       pgpass: 1.0.5
     optionalDependencies:
@@ -5612,6 +5617,9 @@ snapshots:
   semver@7.6.3: {}
 
   semver@7.7.1: {}
+
+  semver@7.7.2:
+    optional: true
 
   shebang-command@2.0.0:
     dependencies:
