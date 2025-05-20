@@ -31,7 +31,7 @@ importers:
         version: 10.0.23(graphql@16.11.0)
       '@t3-oss/env-core':
         specifier: ^0.11.0
-        version: 0.11.1(typescript@5.8.3)(zod@3.24.4)
+        version: 0.11.1(typescript@5.8.3)(zod@3.25.7)
       argon2:
         specifier: ^0.43.0
         version: 0.43.0
@@ -91,7 +91,7 @@ importers:
         version: 1.3.83
       zod:
         specifier: ^3.22.4
-        version: 3.24.4
+        version: 3.25.7
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -3040,8 +3040,8 @@ packages:
   zhead@2.2.4:
     resolution: {integrity: sha512-8F0OI5dpWIA5IGG5NHUg9staDwz/ZPxZtvGVf01j7vHqSyZ0raHY+78atOVxRqb73AotX22uV1pXt3gYSstGag==}
 
-  zod@3.24.4:
-    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
+  zod@3.25.7:
+    resolution: {integrity: sha512-YGdT1cVRmKkOg6Sq7vY7IkxdphySKnXhaUmFI4r4FcuFVNgpCb9tZfNwXbT6BPjD5oz0nubFsoo9pIqKrDcCvg==}
 
 snapshots:
 
@@ -4561,7 +4561,7 @@ snapshots:
 
   '@scalar/openapi-types@0.2.0':
     dependencies:
-      zod: 3.24.4
+      zod: 3.25.7
 
   '@scalar/themes@0.9.86':
     dependencies:
@@ -4578,14 +4578,14 @@ snapshots:
       '@unhead/schema': 1.11.20
       nanoid: 5.1.5
       type-fest: 4.40.1
-      zod: 3.24.4
+      zod: 3.25.7
 
   '@sinclair/typebox@0.34.33':
     optional: true
 
-  '@t3-oss/env-core@0.11.1(typescript@5.8.3)(zod@3.24.4)':
+  '@t3-oss/env-core@0.11.1(typescript@5.8.3)(zod@3.25.7)':
     dependencies:
-      zod: 3.24.4
+      zod: 3.25.7
     optionalDependencies:
       typescript: 5.8.3
 
@@ -6015,4 +6015,4 @@ snapshots:
 
   zhead@2.2.4: {}
 
-  zod@3.24.4: {}
+  zod@3.25.7: {}
