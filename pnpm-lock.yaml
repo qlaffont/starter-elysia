@@ -52,7 +52,7 @@ importers:
         version: 2.0.0(elysia@1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
       elysia-rate-limit:
         specifier: ^4.0.0
-        version: 4.3.0(elysia@1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
+        version: 4.4.0(elysia@1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
       graceful-server-elysia:
         specifier: ^1.0.4
         version: 1.0.25(elysia@1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
@@ -2025,8 +2025,8 @@ packages:
     peerDependencies:
       elysia: '>= 1.0.0'
 
-  elysia-rate-limit@4.3.0:
-    resolution: {integrity: sha512-TCquBhMqUK+Wce+2RoaIk6byhJ6KMtO316PYp4Mc1GKkBH7qKPQH7Y5qVLauBkzx69wBYgFwMrtuz8yToG3JtQ==}
+  elysia-rate-limit@4.4.0:
+    resolution: {integrity: sha512-pyQdFEdjgf5ELx5CAEfOZ2IWhPaYv8WIQMrXimzHzslsJ9awDHoK6rcF9K7k/yAOh4qB1UhiasNeMMBGtxAwYQ==}
     peerDependencies:
       elysia: '>= 1.0.0'
 
@@ -4933,7 +4933,7 @@ snapshots:
     dependencies:
       elysia: 1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)
 
-  elysia-rate-limit@4.3.0(elysia@1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)):
+  elysia-rate-limit@4.4.0(elysia@1.3.3(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)):
     dependencies:
       '@alloc/quick-lru': 5.2.0
       debug: 4.3.4
