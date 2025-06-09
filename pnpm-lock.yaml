@@ -82,7 +82,7 @@ importers:
         version: 2.0.0-rc.2(graphql-scalars@1.23.0(graphql@16.11.0))(graphql@16.11.0)
       unify-elysia:
         specifier: ^1.1.0
-        version: 1.1.37(elysia@1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
+        version: 1.1.38(elysia@1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
       unify-elysia-gql:
         specifier: ^1.1.0
         version: 1.1.39(elysia@1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
@@ -2970,8 +2970,8 @@ packages:
     peerDependencies:
       elysia: latest
 
-  unify-elysia@1.1.37:
-    resolution: {integrity: sha512-WHJqBqKJgU+d1xIAdxF5oAADs0KBZGrCzrm4Mk53AFRNJRJvij5ViK0eNA7O09xLehFflFfdvKIn4M5KjcHxQQ==}
+  unify-elysia@1.1.38:
+    resolution: {integrity: sha512-3lDwaaHwecYja4MEJ1ZbmSXOCgfmF/UePjws0MU76bv2TfFKQ5YGnhpRdAVf+0NsoVXz4XMB/GD/MEM95BRCUg==}
     peerDependencies:
       elysia: latest
 
@@ -5959,7 +5959,7 @@ snapshots:
       elysia: 1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)
       unify-errors: 1.3.84
 
-  unify-elysia@1.1.37(elysia@1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)):
+  unify-elysia@1.1.38(elysia@1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)):
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3))
       elysia: 1.3.4(exact-mirror@0.1.1(@sinclair/typebox@0.34.33))(file-type@20.5.0)(typescript@5.8.3)
