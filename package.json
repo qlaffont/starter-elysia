@@ -28,7 +28,7 @@
     "@graphql-tools/schema": "^10.0.3",
     "@t3-oss/env-core": "^0.11.0",
     "argon2": "^0.43.0",
-    "dotenv": "^16.4.5",
+    "dotenv": "^17.0.0",
     "drizzle-orm": "^0.44.0",
     "elysia": "^1.0.16",
     "elysia-auth-drizzle": "^1.1.16",
