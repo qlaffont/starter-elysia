@@ -52,7 +52,7 @@
     "@biomejs/biome": "1.9.4",
     "@commitlint/config-conventional": "^19.1.0",
     "@opentelemetry/auto-instrumentations-node": "^0.62.0",
-    "@opentelemetry/exporter-zipkin": "^1.23.0",
+    "@opentelemetry/exporter-zipkin": "^2.0.0",
     "@opentelemetry/sdk-node": "^0.57.0",
     "@types/jsonwebtoken": "^9.0.6",
     "bun-types": "latest",
