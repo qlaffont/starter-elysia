@@ -40,7 +40,7 @@ importers:
         version: 16.6.1
       drizzle-orm:
         specifier: ^0.44.0
-        version: 0.44.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7)
+        version: 0.44.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7)
       elysia:
         specifier: ^1.0.16
         version: 1.3.6(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3)
@@ -1899,8 +1899,8 @@ packages:
     resolution: {integrity: sha512-tCPWVZWZqWVx2XUsVpJRnH9Mx0ClVOf5YUHerZ5so1OKSlqww4zy1R5ksEdGRcO3tM3zj0PYN6V48TbQCL1RfA==}
     hasBin: true
 
-  drizzle-orm@0.44.3:
-    resolution: {integrity: sha512-8nIiYQxOpgUicEL04YFojJmvC4DNO4KoyXsEIqN44+g6gNBr6hmVpWk3uyAt4CaTiRGDwoU+alfqNNeonLAFOQ==}
+  drizzle-orm@0.44.4:
+    resolution: {integrity: sha512-ZyzKFpTC/Ut3fIqc2c0dPZ6nhchQXriTsqTNs4ayRgl6sZcFlMs9QZKPSHXK4bdOf41GHGWf+FrpcDDYwW+W6Q==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=4'
@@ -2776,8 +2776,8 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  strtok3@10.3.2:
-    resolution: {integrity: sha512-or9w505RhhY66+uoe5YOC5QO/bRuATaoim3XTh+pGKx5VMWi/HDhMKuCjDLsLJouU2zg9Hf1nLPcNW7IHv80kQ==}
+  strtok3@10.3.4:
+    resolution: {integrity: sha512-KIy5nylvC5le1OdaaoCJ07L+8iQzJHGH6pWDuzS+d07Cu7n1MZ2x26P8ZKIWfbK02+XIL8Mp4RkWeqdUCrDMfg==}
     engines: {node: '>=18'}
 
   sucrase@3.35.0:
@@ -2814,8 +2814,8 @@ packages:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
 
-  token-types@6.0.3:
-    resolution: {integrity: sha512-IKJ6EzuPPWtKtEIEPpIdXv9j5j2LGJEYk0CKY2efgKoYKLBiZdh6iQkLVBow/CB3phyWAWCyk+bZeaimJn6uRQ==}
+  token-types@6.0.4:
+    resolution: {integrity: sha512-MD9MjpVNhVyH4fyd5rKphjvt/1qj+PtQUz65aFqAZA6XniWAuSFRjLk3e2VALEFlh9OwBpXUN7rfeqSnT/Fmkw==}
     engines: {node: '>=14.16'}
 
   tr46@0.0.3:
@@ -4518,7 +4518,7 @@ snapshots:
     dependencies:
       debug: 4.4.1
       fflate: 0.8.2
-      token-types: 6.0.3
+      token-types: 6.0.4
     transitivePeerDependencies:
       - supports-color
 
@@ -4798,7 +4798,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  drizzle-orm@0.44.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7):
+  drizzle-orm@0.44.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7):
     optionalDependencies:
       '@libsql/client-wasm': 0.14.0
       '@opentelemetry/api': 1.9.0
@@ -4820,7 +4820,7 @@ snapshots:
     dependencies:
       '@bogeychan/elysia-logger': 0.1.8(elysia@1.3.6(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3))
       drizzle-kit: 0.31.4
-      drizzle-orm: 0.44.3(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7)
+      drizzle-orm: 0.44.4(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7)
       elysia: 1.3.6(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3)
       jsonwebtoken: 9.0.2
       unify-errors: 1.3.90
@@ -5017,8 +5017,8 @@ snapshots:
   file-type@20.5.0:
     dependencies:
       '@tokenizer/inflate': 0.2.7
-      strtok3: 10.3.2
-      token-types: 6.0.3
+      strtok3: 10.3.4
+      token-types: 6.0.4
       uint8array-extras: 1.4.0
     transitivePeerDependencies:
       - supports-color
@@ -5712,7 +5712,7 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  strtok3@10.3.2:
+  strtok3@10.3.4:
     dependencies:
       '@tokenizer/token': 0.3.0
 
@@ -5753,7 +5753,7 @@ snapshots:
     dependencies:
       is-number: 7.0.0
 
-  token-types@6.0.3:
+  token-types@6.0.4:
     dependencies:
       '@tokenizer/token': 0.3.0
       ieee754: 1.2.1
