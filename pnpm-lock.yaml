@@ -48,8 +48,8 @@ importers:
         specifier: ^1.1.16
         version: 1.3.9(@libsql/client-wasm@0.14.0)(@opentelemetry/api@1.9.0)(@types/pg@8.15.4)(bun-types@1.2.19(@types/react@19.1.8))(elysia@1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3))(gel@2.0.1)(pg@8.16.3)(postgres@3.4.7)
       elysia-helmet:
-        specifier: ^2.0.0
-        version: 2.0.0(elysia@1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3))
+        specifier: ^3.0.0
+        version: 3.0.0(elysia@1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3))
       elysia-rate-limit:
         specifier: ^4.0.0
         version: 4.4.0(elysia@1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3))
@@ -2006,10 +2006,10 @@ packages:
     peerDependencies:
       elysia: ^1.1.22
 
-  elysia-helmet@2.0.0:
-    resolution: {integrity: sha512-GsNmF6cZmyY0eqMotLHSvVbDdo6RYotj5e3oxJ5PHrtwpsvPSi+sj2QbyjOa+6zgfB1ekmvpDH1nUOvXbDTsTg==}
+  elysia-helmet@3.0.0:
+    resolution: {integrity: sha512-6Omemr+mekWMJU8qltrEhWlPr4PfqEHQYrnVwVipph0nDb4lyA8I8e5Tn2iHUvkWNcZ9riCi3P934bO3nUTLjA==}
     peerDependencies:
-      elysia: '>= 1.0.0'
+      elysia: '>= 1.2.0'
 
   elysia-rate-limit@4.4.0:
     resolution: {integrity: sha512-pyQdFEdjgf5ELx5CAEfOZ2IWhPaYv8WIQMrXimzHzslsJ9awDHoK6rcF9K7k/yAOh4qB1UhiasNeMMBGtxAwYQ==}
@@ -4857,7 +4857,7 @@ snapshots:
       - sqlite3
       - supports-color
 
-  elysia-helmet@2.0.0(elysia@1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3)):
+  elysia-helmet@3.0.0(elysia@1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3)):
     dependencies:
       elysia: 1.3.8(exact-mirror@0.1.1(@sinclair/typebox@0.34.38))(file-type@20.5.0)(typescript@5.8.3)
 
