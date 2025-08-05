@@ -46,7 +46,7 @@
     "unify-elysia": "^1.1.0",
     "unify-elysia-gql": "^1.1.0",
     "unify-errors": "^1.3.0",
-    "zod": "^3.22.4"
+    "zod": "^4.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
